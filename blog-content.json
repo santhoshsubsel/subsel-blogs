@@ -1,0 +1,1035 @@
+[
+    {
+        "id": 1,
+        "category": "Salesforce Experience Cloud",
+        "title": "ProjectFlow Task Tracker — A Jira-Style Project Management Tool Built on Salesforce",
+        "author": "Hari Vignesh.",
+        "role": "Salesforce LWC Developer",
+        "date": "April 2026",
+        "readTime": "11 min read",
+        "icon": "ti-layout-kanban",
+        "background": "linear-gradient(135deg,#0d0d1a,#1a1a4a)",
+        "tags": [
+            "Salesforce LWC",
+            "Experience Cloud",
+            "Project Management"
+        ],
+        "contentFile": "content/1.html"
+    },
+    {
+        "id": 2,
+        "category": "Salesforce Integration",
+        "title": "Salesforce × WhatsApp Integration via Meta Cloud API",
+        "author": "Hari Vignesh.",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-brand-whatsapp",
+        "background": "linear-gradient(135deg,#0a2e1a,#075e54)",
+        "tags": [
+            "Salesforce LWC",
+            "WhatsApp API",
+            "Platform Events"
+        ],
+        "contentFile": "content/2.html"
+    },
+    {
+        "id": 3,
+        "category": "Salesforce Automation",
+        "title": "Candidate Management & Email Automation System in Salesforce",
+        "author": "Hari Vignesh.",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-user-check",
+        "background": "linear-gradient(135deg,#0a1a2e,#1a4a6a)",
+        "tags": [
+            "Salesforce Flow",
+            "Email Automation",
+            "Recruitment"
+        ],
+        "contentFile": "content/3.html"
+    },
+    {
+        "id": 4,
+        "category": "Salesforce B2B Commerce",
+        "title": "Guest Checkout and Passwordless Authentication in Salesforce B2B Commerce",
+        "author": "Nambi Selvi",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-shopping-cart",
+        "background": "linear-gradient(135deg,#0b3d91,#1565c0)",
+        "tags": [
+            "Salesforce B2B Commerce",
+            "Guest Checkout",
+            "Passwordless Authentication"
+        ],
+        "contentFile": "content/4.html"
+    },
+    {
+        "id": 5,
+        "category": "Salesforce B2B Commerce",
+        "title": "Salesforce B2B Commerce Cloud Store Set Up",
+        "author": "Nambi Selvi",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-store",
+        "background": "linear-gradient(135deg,#1a237e,#3949ab)",
+        "tags": [
+            "Salesforce B2B Commerce",
+            "Experience Cloud",
+            "Store Setup"
+        ],
+        "contentFile": "content/5.html"
+    },
+    {
+        "id": 6,
+        "category": "Salesforce Integration",
+        "title": "Salesforce to Google Drive Integration",
+        "author": "Nambi Selvi",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-brand-google-drive",
+        "background": "linear-gradient(135deg,#0F9D58,#4285F4)",
+        "tags": [
+            "Salesforce",
+            "Google Drive",
+            "REST API"
+        ],
+        "contentFile": "content/6.html"
+    },
+    {
+        "id": 7,
+        "category": "Salesforce Integration",
+        "title": "Salesforce B2C to Salesforce Core Integration Using MuleSoft and Platform Events",
+        "author": "Nunmadhi Kodeshwaran",
+        "role": "Salesforce Integration Developer",
+        "date": "June 17, 2026",
+        "readTime": "13 min read",
+        "icon": "ti-arrows-exchange",
+        "background": "linear-gradient(135deg,#1565C0,#283593)",
+        "tags": [
+            "Salesforce",
+            "MuleSoft",
+            "Platform Events"
+        ],
+        "contentFile": "content/7.html"
+    },
+    {
+        "id": 8,
+        "category": "Enterprise Integration",
+        "title": "SAP ERP Integration: POC to Production – Scaling Up",
+        "author": "Nunmadhi Kodeshwaran",
+        "role": "Salesforce Integration Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-settings-cog",
+        "background": "linear-gradient(135deg,#37474F,#607D8B)",
+        "tags": [
+            "SAP ERP",
+            "Integration",
+            "Salesforce"
+        ],
+        "contentFile": "content/8.html"
+    },
+    {
+        "id": 9,
+        "category": "Salesforce B2B Commerce",
+        "title": "Salesforce B2B Commerce Cloud Parent Product & Variation Product Setup Guide",
+        "author": "Nunmadhi Kodeshwaran",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-package",
+        "background": "linear-gradient(135deg,#3949AB,#5C6BC0)",
+        "tags": [
+            "B2B Commerce",
+            "Products",
+            "Salesforce"
+        ],
+        "contentFile": "content/9.html"
+    },
+    {
+        "id": 10,
+        "category": "Salesforce LWC",
+        "title": "Bus Tracking Application using Salesforce, Lightning Web Components, and Geolocation API",
+        "author": "Elakiyah L. R",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-map-pin",
+        "background": "linear-gradient(135deg,#00897B,#26A69A)",
+        "tags": [
+            "Lightning Web Components",
+            "Geolocation API",
+            "Salesforce"
+        ],
+        "contentFile": "content/10.html"
+    },
+    {
+        "id": 11,
+        "category": "Quality Assurance",
+        "title": "JIRA Usage for QA Engineers",
+        "author": "Elakiyah L. R",
+        "role": "QA Engineer",
+        "date": "June 17, 2026",
+        "readTime": "9 min read",
+        "icon": "ti-brand-jira",
+        "background": "linear-gradient(135deg,#0052CC,#2684FF)",
+        "tags": [
+            "JIRA",
+            "QA",
+            "Bug Tracking"
+        ],
+        "contentFile": "content/11.html"
+    },
+    {
+        "id": 12,
+        "category": "Salesforce Testing",
+        "title": "Salesforce User Acceptance Testing (UAT) Guide",
+        "author": "Elakiyah L. R",
+        "role": "QA Engineer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-clipboard-check",
+        "background": "linear-gradient(135deg,#1565C0,#42A5F5)",
+        "tags": [
+            "Salesforce",
+            "UAT",
+            "Testing"
+        ],
+        "contentFile": "content/12.html"
+    },
+    {
+        "id": 13,
+        "category": "Agentforce",
+        "title": "Agentforce – Personalised B2B Chat Context",
+        "author": "Roshika Kannan",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-message-chatbot",
+        "background": "linear-gradient(135deg,#512DA8,#7E57C2)",
+        "tags": [
+            "Agentforce",
+            "B2B Commerce",
+            "AI"
+        ],
+        "contentFile": "content/13.html"
+    },
+    {
+        "id": 14,
+        "category": "Agentforce",
+        "title": "Configuring Agentforce on a B2B Commerce Community Page",
+        "author": "Roshika Kannan",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-layout-dashboard",
+        "background": "linear-gradient(135deg,#6A1B9A,#8E24AA)",
+        "tags": [
+            "Agentforce",
+            "Experience Cloud",
+            "B2B Commerce"
+        ],
+        "contentFile": "content/14.html"
+    },
+    {
+        "id": 15,
+        "category": "Agentforce",
+        "title": "SMART ADMIN AGENT",
+        "author": "Roshika Kannan",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-robot",
+        "background": "linear-gradient(135deg,#283593,#5C6BC0)",
+        "tags": [
+            "Agentforce",
+            "AI",
+            "Salesforce Admin"
+        ],
+        "contentFile": "content/15.html"
+    },
+    {
+        "id": 16,
+        "category": "Salesforce Automation",
+        "title": "Automating Bulk File Downloads from Salesforce Using Python and REST APIs",
+        "author": "Samimoonnisha AbdulJabar",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-download",
+        "background": "linear-gradient(135deg,#00695C,#26A69A)",
+        "tags": [
+            "Salesforce",
+            "Python",
+            "REST API"
+        ],
+        "contentFile": "content/16.html"
+    },
+    {
+        "id": 17,
+        "category": "Salesforce Architecture",
+        "title": "Building an Async Process Queue (APQ) Framework in Salesforce",
+        "author": "Samimoonnisha AbdulJabar",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "14 min read",
+        "icon": "ti-stack",
+        "background": "linear-gradient(135deg,#37474F,#546E7A)",
+        "tags": [
+            "Salesforce",
+            "Async Processing",
+            "Apex"
+        ],
+        "contentFile": "content/17.html"
+    },
+    {
+        "id": 18,
+        "category": "Salesforce Commerce Cloud",
+        "title": "Configuring Stripe Payment Gateway Integration in Salesforce Commerce Cloud",
+        "author": "Samimoonnisha AbdulJabar",
+        "role": "Salesforce Commerce Cloud Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-credit-card",
+        "background": "linear-gradient(135deg,#4A148C,#7B1FA2)",
+        "tags": [
+            "Stripe",
+            "Commerce Cloud",
+            "Payment Gateway"
+        ],
+        "contentFile": "content/18.html"
+    },
+    {
+        "id": 19,
+        "category": "Salesforce Productivity",
+        "title": "Formula Generator",
+        "author": "Subalakshmi Marimuthu",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "9 min read",
+        "icon": "ti-function",
+        "background": "linear-gradient(135deg,#0277BD,#29B6F6)",
+        "tags": [
+            "Formula",
+            "Salesforce",
+            "Productivity"
+        ],
+        "contentFile": "content/19.html"
+    },
+    {
+        "id": 20,
+        "category": "Salesforce Development",
+        "title": "Apex Code Reviewer",
+        "author": "Subalakshmi Marimuthu",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-code",
+        "background": "linear-gradient(135deg,#283593,#5C6BC0)",
+        "tags": [
+            "Apex",
+            "Code Review",
+            "Best Practices"
+        ],
+        "contentFile": "content/20.html"
+    },
+    {
+        "id": 21,
+        "category": "Salesforce Data Management",
+        "title": "Bulk Data Validation",
+        "author": "Subalakshmi Marimuthu",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-database",
+        "background": "linear-gradient(135deg,#1565C0,#42A5F5)",
+        "tags": [
+            "Data Validation",
+            "Salesforce",
+            "Data Quality"
+        ],
+        "contentFile": "content/21.html"
+    },
+    {
+        "id": 22,
+        "category": "Salesforce Testing",
+        "title": "How to Test Salesforce Flows",
+        "author": "Divya Subsel",
+        "role": "QA Engineer",
+        "date": "June 17, 2026",
+        "readTime": "9 min read",
+        "icon": "ti-git-branch",
+        "background": "linear-gradient(135deg,#1565C0,#42A5F5)",
+        "tags": [
+            "Salesforce",
+            "Flow",
+            "Testing"
+        ],
+        "contentFile": "content/22.html"
+    },
+    {
+        "id": 23,
+        "category": "API Testing",
+        "title": "REST API Testing Guide for QA Engineers",
+        "author": "Divya Subsel",
+        "role": "QA Engineer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-api",
+        "background": "linear-gradient(135deg,#00897B,#26A69A)",
+        "tags": [
+            "REST API",
+            "QA",
+            "Testing"
+        ],
+        "contentFile": "content/23.html"
+    },
+    {
+        "id": 24,
+        "category": "Technology",
+        "title": "Wireless Smartphone Battery Sharing: Reimagining the Future of Mobile Power Transfer",
+        "author": "Divya Subsel",
+        "role": "Technology Researcher",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-battery-charging",
+        "background": "linear-gradient(135deg,#6A1B9A,#8E24AA)",
+        "tags": [
+            "Wireless Charging",
+            "Battery Sharing",
+            "Innovation"
+        ],
+        "contentFile": "content/24.html"
+    },
+    {
+        "id": 25,
+        "category": "Salesforce Data Cloud",
+        "title": "Configure Calculated Insights - Visual Insights Builder",
+        "author": "Muthukumaran",
+        "role": "Salesforce Data Cloud Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-chart-dots",
+        "background": "linear-gradient(135deg,#3949AB,#5C6BC0)",
+        "tags": [
+            "Data Cloud",
+            "Calculated Insights",
+            "CRM Analytics"
+        ],
+        "contentFile": "content/25.html"
+    },
+    {
+        "id": 26,
+        "category": "Salesforce Data Cloud",
+        "title": "Data Cloud - Configure Data Model",
+        "author": "Muthukumaran",
+        "role": "Salesforce Data Cloud Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-database",
+        "background": "linear-gradient(135deg,#0277BD,#29B6F6)",
+        "tags": [
+            "Data Cloud",
+            "Data Model",
+            "Salesforce"
+        ],
+        "contentFile": "content/26.html"
+    },
+    {
+        "id": 27,
+        "category": "Salesforce Data Cloud",
+        "title": "Data Cloud - Configure Identity Resolution",
+        "author": "Muthukumaran",
+        "role": "Salesforce Data Cloud Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-users-group",
+        "background": "linear-gradient(135deg,#455A64,#607D8B)",
+        "tags": [
+            "Identity Resolution",
+            "Data Cloud",
+            "Customer 360"
+        ],
+        "contentFile": "content/27.html"
+    },
+    {
+        "id": 28,
+        "category": "Quality Assurance",
+        "title": "Order Management System (OMS) Testing Guide: A Complete QA Approach",
+        "author": "Kanimozhi Kaliaperumal",
+        "role": "QA Engineer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-checklist",
+        "background": "linear-gradient(135deg,#EF6C00,#FB8C00)",
+        "tags": [
+            "OMS",
+            "QA",
+            "Testing"
+        ],
+        "contentFile": "content/28.html"
+    },
+    {
+        "id": 29,
+        "category": "Salesforce Testing",
+        "title": "Salesforce Testing Basics for QA Engineers",
+        "author": "Kanimozhi Kaliaperumal",
+        "role": "QA Engineer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-clipboard-check",
+        "background": "linear-gradient(135deg,#1565C0,#42A5F5)",
+        "tags": [
+            "Salesforce",
+            "QA",
+            "Testing"
+        ],
+        "contentFile": "content/29.html"
+    },
+    {
+        "id": 30,
+        "category": "Salesforce Data Quality",
+        "title": "Customer Data Quality Command Center",
+        "author": "Sivapriya S",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-database-check",
+        "background": "linear-gradient(135deg,#00897B,#26A69A)",
+        "tags": [
+            "Salesforce",
+            "Data Quality",
+            "Customer 360"
+        ],
+        "contentFile": "content/30.html"
+    },
+    {
+        "id": 31,
+        "category": "Salesforce Documentation",
+        "title": "Petrosoft – Use Case Document",
+        "author": "Sivapriya S",
+        "role": "Business Analyst",
+        "date": "June 17, 2026",
+        "readTime": "9 min read",
+        "icon": "ti-file-description",
+        "background": "linear-gradient(135deg,#455A64,#607D8B)",
+        "tags": [
+            "Documentation",
+            "Use Case",
+            "Business Analysis"
+        ],
+        "contentFile": "content/31.html"
+    },
+    {
+        "id": 32,
+        "category": "Salesforce AI",
+        "title": "Salesforce AI Admin Assistant",
+        "author": "Sivapriya S",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-robot",
+        "background": "linear-gradient(135deg,#512DA8,#7E57C2)",
+        "tags": [
+            "Agentforce",
+            "AI",
+            "Salesforce Admin"
+        ],
+        "contentFile": "content/32.html"
+    },
+    {
+        "id": 33,
+        "category": "Salesforce Commerce",
+        "title": "Prepaid Package Redemption Implementation in Salesforce Commerce",
+        "author": "Kowsiga",
+        "role": "Salesforce Commerce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-package",
+        "background": "linear-gradient(135deg,#283593,#5C6BC0)",
+        "tags": [
+            "Salesforce Commerce",
+            "Redemption",
+            "E-Commerce"
+        ],
+        "contentFile": "content/33.html"
+    },
+    {
+        "id": 34,
+        "category": "Salesforce B2B Commerce",
+        "title": "Setting Up a Stripe Payment Gateway Integration in Salesforce B2B Commerce",
+        "author": "Kowsiga",
+        "role": "Salesforce Commerce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-credit-card",
+        "background": "linear-gradient(135deg,#6A1B9A,#8E24AA)",
+        "tags": [
+            "Stripe",
+            "B2B Commerce",
+            "Payment Gateway"
+        ],
+        "contentFile": "content/34.html"
+    },
+    {
+        "id": 35,
+        "category": "Salesforce B2B Commerce",
+        "title": "Salesforce B2B Commerce Setup Guide",
+        "author": "Anbarasi Sankar",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-store",
+        "background": "linear-gradient(135deg,#0D47A1,#1976D2)",
+        "tags": [
+            "B2B Commerce",
+            "Experience Cloud",
+            "Salesforce"
+        ],
+        "contentFile": "content/35.html"
+    },
+    {
+        "order": 36,
+        "id": 36,
+        "featured": false,
+        "cat": "Salesforce Integration",
+        "icon": "ti-arrows-exchange",
+        "bg": "linear-gradient(135deg,#1565C0,#3949AB)",
+        "title": "Salesforce OMS Integration with B2B Commerce Cloud and B2C Commerce Cloud",
+        "text": "Integrate Salesforce Order Management System with B2B Commerce Cloud and B2C Commerce Cloud for unified order processing.",
+        "author": "Anbarasi Sankar",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=36"
+    },
+    {
+        "order": 37,
+        "id": 37,
+        "featured": false,
+        "cat": "Salesforce AI",
+        "icon": "ti-message-chatbot",
+        "bg": "linear-gradient(135deg,#512DA8,#7E57C2)",
+        "title": "Product Inquiry Chat Launch",
+        "text": "Build an AI-powered product inquiry chat experience to provide instant customer assistance in Salesforce.",
+        "author": "Vigneshwaran",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=37"
+    },
+    {
+        "order": 38,
+        "id": 38,
+        "featured": false,
+        "cat": "Salesforce Experience Cloud",
+        "icon": "ti-file-search",
+        "bg": "linear-gradient(135deg,#0D47A1,#1976D2)",
+        "title": "DYNAMIC DOCUMENT PREVIEW Using Salesforce LWC & Experience Cloud",
+        "text": "Create dynamic document previews using Salesforce Lightning Web Components and Experience Cloud for a seamless user experience.",
+        "author": "Vigneshwaran",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=38"
+    },
+    {
+        "order": 39,
+        "id": 39,
+        "featured": false,
+        "cat": "Salesforce Automation",
+        "icon": "ti-signature",
+        "bg": "linear-gradient(135deg,#00897B,#26A69A)",
+        "title": "Building an E-Signature Solution in Salesforce",
+        "text": "Implement a secure electronic signature solution using Salesforce, Apex, and Lightning Web Components.",
+        "author": "Vigneshwaran",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=39"
+    },
+    {
+        "order": 40,
+        "id": 40,
+        "featured": false,
+        "cat": "Salesforce NPSP",
+        "icon": "ti-heart-handshake",
+        "bg": "linear-gradient(135deg,#2E7D32,#66BB6A)",
+        "title": "Modernizing NGO Fundraising and Donor Management with Salesforce NPSP",
+        "text": "Leverage Salesforce Nonprofit Success Pack (NPSP) to modernize fundraising, donor engagement, and nonprofit operations.",
+        "author": "Bose V",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=40"
+    },
+    {
+        "order": 41,
+        "id": 41,
+        "featured": false,
+        "cat": "Agentforce",
+        "icon": "ti-robot",
+        "bg": "linear-gradient(135deg,#6A1B9A,#8E24AA)",
+        "title": "AI-Powered Employee Policy & HR Assistant using Agentforce RAG",
+        "text": "Build an intelligent HR assistant using Agentforce RAG to answer employee policy questions with contextual responses.",
+        "author": "Bose V",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=41"
+    },
+    {
+        "order": 42,
+        "id": 42,
+        "featured": false,
+        "cat": "Agentforce",
+        "icon": "ti-sparkles",
+        "bg": "linear-gradient(135deg,#5E35B1,#7E57C2)",
+        "title": "Transforming Customer Support with Agentforce Prompt Builder",
+        "text": "Enhance customer support experiences using Agentforce Prompt Builder to create intelligent AI-driven prompts.",
+        "author": "Bose V",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?id=42"
+    },
+    {
+        "id": 36,
+        "category": "Salesforce Integration",
+        "title": "Salesforce OMS Integration with B2B Commerce Cloud and B2C Commerce Cloud",
+        "author": "Anbarasi Sankar",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-arrows-exchange",
+        "background": "linear-gradient(135deg,#1565C0,#3949AB)",
+        "tags": [
+            "OMS",
+            "B2B Commerce",
+            "B2C Commerce"
+        ],
+        "contentFile": "content/36.html"
+    },
+    {
+        "id": 37,
+        "category": "Salesforce AI",
+        "title": "Product Inquiry Chat Launch",
+        "author": "Vigneshwaran",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-message-chatbot",
+        "background": "linear-gradient(135deg,#512DA8,#7E57C2)",
+        "tags": [
+            "Agentforce",
+            "AI",
+            "Chatbot"
+        ],
+        "contentFile": "content/37.html"
+    },
+    {
+        "id": 38,
+        "category": "Salesforce Experience Cloud",
+        "title": "DYNAMIC DOCUMENT PREVIEW Using Salesforce LWC & Experience Cloud",
+        "author": "Vigneshwaran",
+        "role": "Salesforce LWC Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-file-search",
+        "background": "linear-gradient(135deg,#0D47A1,#1976D2)",
+        "tags": [
+            "LWC",
+            "Experience Cloud",
+            "Document Preview"
+        ],
+        "contentFile": "content/38.html"
+    },
+    {
+        "id": 39,
+        "category": "Salesforce Automation",
+        "title": "Building an E-Signature Solution in Salesforce",
+        "author": "Vigneshwaran",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-signature",
+        "background": "linear-gradient(135deg,#00897B,#26A69A)",
+        "tags": [
+            "E-Signature",
+            "Apex",
+            "LWC"
+        ],
+        "contentFile": "content/39.html"
+    },
+    {
+        "id": 40,
+        "category": "Salesforce NPSP",
+        "title": "Modernizing NGO Fundraising and Donor Management with Salesforce NPSP",
+        "author": "Bose V",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-heart-handshake",
+        "background": "linear-gradient(135deg,#2E7D32,#66BB6A)",
+        "tags": [
+            "NPSP",
+            "Nonprofit",
+            "Fundraising"
+        ],
+        "contentFile": "content/40.html"
+    },
+    {
+        "id": 41,
+        "category": "Agentforce",
+        "title": "AI-Powered Employee Policy & HR Assistant using Agentforce RAG",
+        "author": "Bose V",
+        "role": "Salesforce AI Developer",
+        "date": "June 17, 2026",
+        "readTime": "13 min read",
+        "icon": "ti-robot",
+        "background": "linear-gradient(135deg,#6A1B9A,#8E24AA)",
+        "tags": [
+            "Agentforce",
+            "RAG",
+            "HR Assistant"
+        ],
+        "contentFile": "content/41.html"
+    },
+    {
+        "id": 42,
+        "category": "Agentforce",
+        "title": "Transforming Customer Support with Agentforce Prompt Builder",
+        "author": "Bose V",
+        "role": "Salesforce AI Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-sparkles",
+        "background": "linear-gradient(135deg,#5E35B1,#7E57C2)",
+        "tags": [
+            "Agentforce",
+            "Prompt Builder",
+            "Customer Support"
+        ],
+        "contentFile": "content/42.html"
+    },
+    {
+        "id": 43,
+        "category": "Salesforce AI",
+        "title": "Resume Auto-Fill Agent",
+        "author": "Deerak Kumar T",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-file-text-ai",
+        "background": "linear-gradient(135deg,#1565C0,#42A5F5)",
+        "tags": [
+            "AI",
+            "Resume",
+            "Automation"
+        ],
+        "contentFile": "content/43.html"
+    },
+    {
+        "id": 44,
+        "category": "Salesforce Integration",
+        "title": "WhatsApp Integration in Salesforce",
+        "author": "Deerak Kumar T",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-brand-whatsapp",
+        "background": "#075e54",
+        "tags": [
+            "WhatsApp",
+            "Meta Cloud API",
+            "Salesforce"
+        ],
+        "contentFile": "content/44.html"
+    },
+    {
+        "id": 45,
+        "category": "Salesforce LWC",
+        "title": "How I Added Real-Time Travel Time to a Doctor Booking App in Salesforce",
+        "author": "Vigneshwar",
+        "role": "Salesforce LWC Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-map-route",
+        "background": "linear-gradient(135deg,#00897B,#26A69A)",
+        "tags": [
+            "LWC",
+            "Google Maps",
+            "Doctor Booking"
+        ],
+        "contentFile": "content/45.html"
+    },
+    {
+        "id": 46,
+        "category": "Salesforce LWC",
+        "title": "Building a @Mention Notification System in Salesforce LWC",
+        "author": "Vigneshwar",
+        "role": "Salesforce LWC Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-at",
+        "background": "linear-gradient(135deg,#3949AB,#5C6BC0)",
+        "tags": [
+            "LWC",
+            "@Mention",
+            "Notifications"
+        ],
+        "contentFile": "content/46.html"
+    },
+    {
+        "id": 47,
+        "category": "Salesforce Experience Cloud",
+        "title": "Building a Multi-Store eCommerce Platform on Salesforce Experience Cloud",
+        "author": "Vigneshwar",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "13 min read",
+        "icon": "ti-shopping-cart",
+        "background": "linear-gradient(135deg,#0D47A1,#1976D2)",
+        "tags": [
+            "Experience Cloud",
+            "eCommerce",
+            "LWC"
+        ],
+        "contentFile": "content/47.html"
+    },
+    {
+        "id": 48,
+        "category": "Salesforce Integration",
+        "title": "Integrating DocuSign with Salesforce",
+        "author": "Karan Kishore",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-file-certificate",
+        "background": "linear-gradient(135deg,#6A1B9A,#8E24AA)",
+        "tags": [
+            "DocuSign",
+            "Salesforce",
+            "Integration"
+        ],
+        "contentFile": "content/48.html"
+    },
+    {
+        "id": 49,
+        "category": "Salesforce Flow",
+        "title": "Enforcing Mandatory Screen Flow Completion by Preventing Modal Closure in Salesforce",
+        "author": "Karan Kishore",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-lock",
+        "background": "linear-gradient(135deg,#5E35B1,#7E57C2)",
+        "tags": [
+            "Screen Flow",
+            "Flow",
+            "UX"
+        ],
+        "contentFile": "content/49.html"
+    },
+    {
+        "id": 50,
+        "category": "Salesforce HR Management",
+        "title": "HR AND EMPLOYEE MANAGEMENT APP TRACKER",
+        "author": "Karan Kishore",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-users",
+        "background": "linear-gradient(135deg,#1565C0,#42A5F5)",
+        "tags": [
+            "HR",
+            "Employee Management",
+            "Salesforce"
+        ],
+        "contentFile": "content/50.html"
+    },
+    {
+        "id": 51,
+        "category": "Agentforce",
+        "title": "Petrol API Integration with Agentforce",
+        "author": "Marimuthu Palanivel",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-gas-station",
+        "background": "linear-gradient(135deg,#EF6C00,#FB8C00)",
+        "tags": [
+            "Agentforce",
+            "API",
+            "Integration"
+        ],
+        "contentFile": "content/51.html"
+    },
+    {
+        "id": 52,
+        "category": "Salesforce LWC",
+        "title": "Metadata Configurable LWC",
+        "author": "Marimuthu Palanivel",
+        "role": "Salesforce LWC Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-components",
+        "background": "linear-gradient(135deg,#00897B,#26A69A)",
+        "tags": [
+            "LWC",
+            "Custom Metadata",
+            "Reusable Components"
+        ],
+        "contentFile": "content/52.html"
+    },
+    {
+        "id": 53,
+        "category": "Git",
+        "title": "Git Basics – Local Repository and Remote Repository",
+        "author": "Thamilvendhan T",
+        "role": "Software Developer",
+        "date": "June 17, 2026",
+        "readTime": "9 min read",
+        "icon": "ti-brand-github",
+        "background": "linear-gradient(135deg,#24292E,#4B5563)",
+        "tags": [
+            "Git",
+            "GitHub",
+            "Version Control"
+        ],
+        "contentFile": "content/53.html"
+    },
+    {
+        "id": 54,
+        "category": "Salesforce AI",
+        "title": "Dynamic SOQL Generator using Apex, Lightning Web Components, and OpenRouter API",
+        "author": "Thamilvendhan T",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-code-dots",
+        "background": "linear-gradient(135deg,#3949AB,#5C6BC0)",
+        "tags": [
+            "Apex",
+            "OpenRouter API",
+            "SOQL"
+        ],
+        "contentFile": "content/54.html"
+    },
+    {
+        "id": 55,
+        "category": "Salesforce LWC",
+        "title": "Product Image Public URL Generator using Apex and Lightning Web Components",
+        "author": "Thamilvendhan T",
+        "role": "Salesforce LWC Developer",
+        "date": "June 17, 2026",
+        "readTime": "11 min read",
+        "icon": "ti-photo",
+        "background": "linear-gradient(135deg,#0D47A1,#1976D2)",
+        "tags": [
+            "LWC",
+            "Apex",
+            "Content Distribution"
+        ],
+        "contentFile": "content/55.html"
+    }
+]

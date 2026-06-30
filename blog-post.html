@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Post | Subsel Tech Solutions</title>
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="/css/animate.min.css" />
+  <!--=== BoxIcons CSS ===-->
+  <link rel="stylesheet" href="/css/boxicons.min.css" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+  <!-- Owl Default CSS -->
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="/css/magnific-popup.min.css" />
+  <!-- Odometer CSS -->
+  <link rel="stylesheet" href="/css/odometer.min.css" />
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="/css/nice-select.min.css" />
+  <!--=== MeanMenu CSS ===-->
+  <link rel="stylesheet" href="/css/meanmenu.min.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- Dark CSS -->
+  <link rel="stylesheet" href="/css/dark.css" />
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <!-- Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--=== Title ===-->
+  <title>Subsel Tech Solutions-Subsel Tech Solutions</title>
+  <link rel="icon" type="image/png" href="/img/subselLogo.png" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Hide only the preloader */
+.preloader { display:none!important; }
+.preloader::before { display:none!important; }
+.preloader::after { display:none!important; }
+.preloader .spinner { display:none!important; }
+
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --navy:#0d1820;
+  --blue:#0865f8;
+  --teal:#4BACC6;
+  --gold:#c9a86a;
+  --paper:#f7f6f3;
+  --card:#ffffff;
+  --rule:#e8e4da;
+  --gray:#6b7280;
+}
+
+html,body{
+  font-family:'Inter',sans-serif;
+  background:var(--paper);
+  color:var(--navy);
+  visibility:visible;
+  font-size:15px;
+}
+
+h1,h2,h3{font-family:'Inter',sans-serif;letter-spacing:-0.01em;}
+
+/* HERO */
+.bp-hero{
+  background:linear-gradient(135deg, #0d1820 0%, #142536 45%, #0865f8 100%);
+  padding:76px 56px 0;
+  position:relative;
+  overflow:hidden;
+}
+.bp-hero::after{
+  content:'';
+  position:absolute;
+  left:56px;
+  right:56px;
+  bottom:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#c9a86a 50%,transparent);
+  opacity:.4;
+}
+.bp-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%234BACC6' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  z-index:1;
+}
+
+.bp-hero-inner{
+  max-width:900px;
+  margin:0 auto;
+  position:relative;
+  z-index:2;
+}
+
+.bp-hero-meta{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.bp-cat{
+  color:#c9a86a;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  position:relative;
+  padding-left:18px;
+  background:rgba(201,168,106,.12);
+  padding:6px 14px;
+  border-radius:50px;
+}
+
+.bp-cat::before{
+  content:'';
+  position:absolute;
+  left:8px;
+  top:50%;
+  transform:translateY(-50%);
+  width:4px;
+  height:4px;
+  background:#c9a86a;
+  border-radius:50%;
+}
+
+.bp-date,.bp-readtime{
+  color:rgba(255,255,255,.65);
+  font-size:12px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  letter-spacing:.02em;
+  font-weight:400;
+}
+
+.bp-date i, .bp-readtime i { color:#4BACC6; }
+
+.bp-hero h1{
+  font-size:42px;
+  font-weight:700;
+  color:#fff;
+  line-height:1.28;
+  margin-bottom:36px;
+  max-width:780px;
+}
+
+.bp-author{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding-bottom:40px;
+}
+
+.bp-avatar{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:linear-gradient(135deg, #c9a86a, #a8854a);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  font-weight:600;
+  color:#0d1820;
+  flex-shrink:0;
+  font-family:'Inter',sans-serif;
+  border:2px solid rgba(255,255,255,.2);
+}
+
+.bp-avatar img {
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.bp-author-info strong{
+  display:block;
+  font-size:14.5px;
+  font-weight:600;
+  color:#fff;
+  font-family:'Inter',sans-serif;
+}
+
+.bp-author-info span{
+  font-size:12px;
+  color:rgba(255,255,255,.65);
+  font-weight:400;
+}
+
+/* ============================================
+   LAYOUT
+   (previously duplicated 3x across the file —
+   consolidated into a single set of rules)
+   ============================================ */
+
+.bp-layout{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) 320px !important;
+  gap:36px !important;
+  align-items:stretch !important;
+  max-width:1440px !important;
+  margin:auto !important;
+  padding:40px 56px 100px;
+  overflow:visible !important;
+}
+
+.bp-main{
+  overflow:visible !important;
+  height:auto !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+}
+
+.bp-main::-webkit-scrollbar{
+  display:none !important;
+}
+
+.bp-sidebar{
+  position:relative !important;
+  align-self:stretch !important;
+  overflow:visible !important;
+  height:auto !important;
+  min-width:0 !important;
+}
+
+.bp-sidebar-inner{
+  position:-webkit-sticky !important;
+  position:sticky !important;
+  top:70px !important;
+  width:100% !important;
+  align-self:flex-start !important;
+}
+
+.bp-sidebar::-webkit-scrollbar{
+  display:none;
+}
+
+.bp-article{
+  background:var(--card);
+  border-radius:12px;
+  padding:56px;
+  box-shadow:0 1px 3px rgba(13,24,32,.04),0 18px 50px -20px rgba(13,24,32,.12);
+  border:1px solid var(--rule);
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+.bp-cover{
+  width:100%;
+  border-radius:8px;
+  margin-bottom:44px;
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative;
+  background:linear-gradient(135deg, #0d1820, #0865f8);
+}
+
+.bp-cover::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:8px;
+}
+
+.bp-article h2{
+  font-size:24px;
+  font-weight:700;
+  color:var(--navy);
+  margin:46px 0 16px;
+  position:relative;
+  padding-bottom:14px;
+}
+
+.bp-article h2::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:40px;
+  height:2px;
+  background:var(--gold);
+}
+
+.bp-article h3{
+  font-size:18px;
+  font-weight:700;
+  color:var(--navy);
+  margin:32px 0 10px;
+  font-family:'Inter',sans-serif;
+}
+
+.bp-article p{
+  font-size:15px;
+  color:#475569;
+  line-height:1.8;
+  margin-bottom:20px;
+  font-weight:400;
+}
+
+.bp-article ul,.bp-article ol{
+  padding-left:22px;
+  margin-bottom:20px;
+}
+
+.bp-article li{
+  font-size:15px;
+  color:#475569;
+  line-height:1.8;
+  margin-bottom:9px;
+  font-weight:400;
+}
+
+.bp-article ol{
+  counter-reset:step;
+  list-style:none;
+  padding-left:0;
+}
+
+.bp-article ol li{
+  counter-increment:step;
+  position:relative;
+  padding-left:48px;
+  margin-bottom:26px;
+}
+
+.bp-article ol li::before{
+  content:counter(step,decimal-leading-zero);
+  position:absolute;
+  left:0;
+  top:-2px;
+  font-family:'Inter',sans-serif;
+  font-size:14px;
+  font-weight:700;
+  color:#fff;
+  background:linear-gradient(135deg, #0865f8, #4BACC6);
+  border:none;
+  width:32px;
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+}
+
+.bp-article ol li p{
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+.bp-article strong{
+  color:var(--navy);
+  font-weight:700;
+}
+
+.bp-article blockquote{
+  border-left:3px solid var(--gold);
+  background:linear-gradient(90deg, rgba(201,168,106,.06), transparent);
+  padding:22px 30px;
+  border-radius:0 4px 4px 0;
+  margin:30px 0;
+  font-size:15.5px;
+  color:var(--navy);
+  font-style:italic;
+  line-height:1.85;
+  font-family:'Inter',sans-serif;
+  font-weight:500;
+}
+
+.bp-tip{
+  background:linear-gradient(135deg, rgba(8,101,248,.06), rgba(75,172,198,.04));
+  border:1px solid rgba(8,101,248,.18);
+  border-radius:8px;
+  padding:22px 26px;
+  margin:30px 0;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.bp-tip i{
+  font-size:19px;
+  color:var(--gold);
+  flex-shrink:0;
+  margin-top:2px;
+}
+
+.bp-tip p{
+  margin:0;
+  font-size:14.5px;
+  color:#475569;
+  font-weight:400;
+  line-height:1.7;
+}
+
+.bp-article code{
+  background:rgba(8,101,248,.08);
+  color:var(--blue);
+  padding:2px 8px;
+  border-radius:4px;
+  font-size:13.5px;
+  font-family:monospace;
+  font-weight:500;
+}
+
+.bp-article pre{
+  background:var(--navy);
+  border-radius:8px;
+  padding:22px;
+  margin:22px 0;
+  overflow-x:auto;
+  border:1px solid rgba(75,172,198,.2);
+}
+
+.bp-article pre code{
+  background:none;
+  color:#cbd5e1;
+  font-size:13px;
+  line-height:1.7;
+  padding:0;
+}
+
+.bp-article table{
+  width:100%;
+  border-collapse:collapse;
+  margin:26px 0;
+  font-size:13.5px;
+}
+
+.bp-article table th{
+  text-align:left;
+  padding:13px 16px;
+  border-bottom:2px solid var(--navy);
+  background:transparent;
+  font-weight:700;
+  color:var(--navy);
+  font-size:11px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.bp-article table td{
+  padding:13px 16px;
+  border-bottom:1px solid var(--rule);
+  color:#475569;
+  font-weight:400;
+}
+
+.bp-article-img{
+  width:100%;
+  display:block;
+  margin:32px 0;
+  border-radius:8px;
+  border:1px solid var(--rule);
+  box-shadow:0 1px 3px rgba(13,24,32,.04),0 18px 40px -18px rgba(13,24,32,.14);
+}
+
+.bp-img-row{
+  display:flex;
+  gap:18px;
+  margin:32px 0;
+}
+
+.bp-img-row figure{
+  flex:1;
+  margin:0;
+}
+
+.bp-img-row img{
+  width:100%;
+  display:block;
+  border-radius:8px;
+  border:1px solid var(--rule);
+  box-shadow:0 1px 3px rgba(13,24,32,.04),0 18px 40px -18px rgba(13,24,32,.14);
+}
+
+.bp-img-row figcaption{
+  text-align:center;
+  font-size:12px;
+  color:var(--gray);
+  margin-top:10px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+@media(max-width:700px){.bp-img-row{flex-direction:column;}}
+
+.bp-tags{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:44px;
+  padding-top:26px;
+  border-top:1px solid var(--rule);
+}
+
+.bp-tag{
+  padding:6px 16px;
+  border-radius:50px;
+  background:linear-gradient(135deg, rgba(8,101,248,.06), rgba(201,168,106,.08));
+  border:1px solid rgba(201,168,106,.25);
+  color:var(--blue);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.03em;
+}
+
+.bp-back{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:var(--gray);
+  text-decoration:none;
+  font-size:12.5px;
+  font-weight:600;
+  margin-bottom:0;
+  transition:.2s;
+  cursor:pointer;
+  background:none;
+  border:none;
+  font-family:'Inter',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+.bp-back:hover{color:var(--gold);}
+
+/* STICKY HEADER (matches site-wide .is-sticky pattern, scoped to this page) */
+.navbar-area.is-sticky{
+  -webkit-animation: none;
+  animation: none;
+}
+
+.bp-navbar-spacer{
+  display:none;
+  height:0;
+}
+
+.bp-navbar-spacer.is-active{
+  display:block;
+}
+
+/* TOC / STEP GUIDE SIDEBAR CARD — ACCORDION STYLE PANELS */
+.bp-toc-card{
+  position: relative;
+}
+
+.bp-toc-card h4{
+  cursor:pointer;
+  user-select:none;
+  justify-content:space-between;
+  margin-bottom:0;
+  border-bottom:none;
+  padding-bottom:0;
+  transition:.2s;
+}
+
+.bp-toc-card.is-open h4{
+  margin-bottom:20px;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:16px;
+}
+
+.bp-toc-card h4 .bp-toc-heading{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.bp-toc-chevron{
+  font-size:15px;
+  color:var(--gray);
+  transition:transform .25s ease;
+  flex-shrink:0;
+}
+
+.bp-toc-card.is-open .bp-toc-chevron{
+  transform:rotate(180deg);
+}
+
+.bp-toc-body{
+  overflow:hidden;
+  max-height:0;
+  transition:max-height .3s ease;
+}
+
+.bp-toc-card.is-open .bp-toc-body{
+  max-height:2000px;
+}
+
+.bp-toc-list{
+  list-style:none;
+  padding-left:0;
+  margin:0;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.bp-toc-item{
+  position: relative;
+  margin-bottom:0;
+}
+
+.bp-toc-link{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px 14px;
+  text-decoration:none;
+  border-radius:10px;
+  cursor:pointer;
+  background:#fbfaf8;
+  border:1px solid var(--rule);
+  width:100%;
+  text-align:left;
+  font-family:'Inter',sans-serif;
+  transition:.2s;
+  box-shadow:0 1px 2px rgba(13,24,32,.03);
+}
+
+.bp-toc-link:hover{
+  background:rgba(8,101,248,.05);
+  border-color:rgba(8,101,248,.25);
+  transform:translateX(2px);
+}
+
+.bp-toc-num{
+  position: relative;
+  flex-shrink:0;
+  width:30px;
+  height:30px;
+  border-radius:8px;
+  background:#fff;
+  border:1px solid var(--rule);
+  color:var(--gray);
+  font-size:12px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Inter',sans-serif;
+  transition:.2s;
+  z-index:1;
+}
+
+.bp-toc-link.is-active{
+  background:linear-gradient(135deg, rgba(8,101,248,.08), rgba(75,172,198,.06));
+  border-color:rgba(8,101,248,.3);
+}
+
+.bp-toc-link.is-active .bp-toc-num{
+  background:linear-gradient(135deg, #0865f8, #4BACC6);
+  border-color:transparent;
+  color:#fff;
+}
+
+.bp-toc-link.is-active .bp-toc-text{
+  color:var(--blue);
+  font-weight:600;
+}
+
+.bp-toc-text{
+  font-size:13.5px;
+  color:#475569;
+  line-height:1.4;
+  font-weight:500;
+}
+
+.bp-toc-empty{
+  font-size:12.5px;
+  color:var(--gray);
+  font-style:italic;
+}
+
+/* SIDEBAR */
+.bp-sidebar-card{
+  background:var(--card);
+  border-radius:12px;
+  padding:30px;
+  margin-top: 45px;
+  margin-bottom:22px;
+  box-shadow:0 1px 3px rgba(13,24,32,.04),0 14px 40px -18px rgba(13,24,32,.1);
+  border:1px solid var(--rule);
+}
+
+.bp-sidebar-card h4{
+  font-size:13px;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:20px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:16px;
+  font-family:'Inter',sans-serif;
+}
+
+.bp-sidebar-card h4 i{color:var(--gold);}
+
+.bp-related{
+  display:flex;
+  gap:13px;
+  padding:14px 0;
+  border-bottom:1px solid var(--rule);
+  text-decoration:none;
+}
+
+.bp-related:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+}
+
+.bp-related-thumb{
+  width:52px;
+  height:52px;
+  border-radius:12px;
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  color:#fff;
+  background:linear-gradient(135deg, #0865f8, #4BACC6);
+  border:1px solid rgba(201,168,106,.3);
+}
+
+.bp-related-thumb img {
+  width:100%;
+  height:100%;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+.bp-related-info strong{
+  display:block;
+  font-size:13.5px;
+  font-weight:600;
+  color:var(--navy);
+  line-height:1.4;
+  margin-bottom:4px;
+  font-family:'Inter',sans-serif;
+}
+
+.bp-related-info span{
+  font-size:11px;
+  color:var(--gray);
+}
+
+.bp-related:hover .bp-related-info strong{
+  color:var(--blue);
+}
+
+.bp-cta{
+  background:linear-gradient(135deg, #0d1820, #142536);
+  border-radius:12px;
+  padding:34px 28px;
+  text-align:left;
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(201,168,106,.15);
+}
+
+.bp-cta::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+
+.bp-cta h4{
+  font-size:18px;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:11px;
+}
+
+.bp-cta p{
+  font-size:13px;
+  color:rgba(255,255,255,.65);
+  line-height:1.7;
+  margin-bottom:24px;
+  font-weight:400;
+}
+
+.bp-cta a{
+  display:inline-block;
+  background:linear-gradient(135deg, #0865f8, #4BACC6);
+  color:#fff;
+  padding:12px 24px;
+  border-radius:8px;
+  font-size:12.5px;
+  font-weight:700;
+  text-decoration:none;
+  letter-spacing:.02em;
+  transition:.2s;
+}
+
+.bp-cta a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(75,172,198,.3);
+}
+
+.bp-notfound{text-align:center;padding:130px 20px;}
+.bp-notfound i{font-size:58px;color:var(--rule);display:block;margin-bottom:20px;}
+.bp-notfound h2{font-size:23px;color:var(--navy);margin-bottom:10px;}
+.bp-notfound p{color:var(--gray);font-size:14px;margin-bottom:28px;}
+.bp-notfound a{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--blue);
+  color:#fff;
+  padding:12px 24px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* ----- Navbar variant switching (safety net, in case
+   responsive.css mobile breakpoint doesn't reach this page) ----- */
+.main-responsive-nav{
+  display:none;
+}
+
+@media (max-width:991px){
+  .main-responsive-nav{
+    display:block;
+  }
+  .main-navbar{
+    display:none !important;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET & MOBILE
+   Breakpoints: 1100 (tablet) / 768 (small tablet,
+   large phone) / 480 (phone) / 360 (small phone)
+   ============================================ */
+
+/* ----- TABLET: 1100px and below ----- */
+/* ----- SMALL TABLET / LARGE PHONE: 768px and below ----- */
+@media (max-width:768px){
+  .bp-layout{
+    grid-template-columns:1fr !important;
+    padding:0 16px 60px !important;
+    gap:24px !important;
+    height:auto;
+    overflow:visible;
+  }
+
+  .bp-main{
+    height:auto;
+    overflow:visible;
+    padding-right:0;
+    padding-top:26px;
+  }
+
+  /* Safety-net overrides for site-wide header/nav so this page
+     never overflows at small widths, regardless of responsive.css */
+  .top-header-area{
+    display:none !important;
+  }
+
+  .navbar-area .logo img{
+    height:30px !important;
+    width:auto !important;
+  }
+
+  .navbar-area .logo .title{
+    font-size:14px !important;
+  }
+
+  .main-responsive-nav .d-flex.justify-content-between{
+    align-items:center !important;
+  }
+
+  .bp-sidebar{
+    display:none !important;
+    position:static;
+    align-self:auto;
+    top:auto;
+    height:auto;
+    max-height:none;
+  }
+
+  .bp-sidebar-inner{
+    position:static;
+    top:auto;
+  }
+
+  .bp-hero{padding:44px 20px 0;}
+  .bp-hero-inner{max-width:100%;}
+  .bp-hero h1{font-size:26px;line-height:1.35;margin-bottom:24px;max-width:100%;}
+  .bp-hero-meta{gap:10px;margin-bottom:22px;}
+  .bp-cat{font-size:10px;padding:5px 12px;}
+  .bp-date,.bp-readtime{font-size:11px;}
+
+  .bp-author{padding-bottom:28px;gap:12px;}
+  .bp-avatar{width:38px;height:38px;font-size:12.5px;}
+  .bp-author-info strong{font-size:13.5px;}
+  .bp-author-info span{font-size:11px;}
+
+  .bp-article{padding:24px 18px;border-radius:10px;}
+
+  .bp-cover{height:200px;margin-bottom:30px;}
+  .bp-cover i{font-size:60px !important;}
+
+  .bp-article h2{font-size:20px;margin:34px 0 14px;}
+  .bp-article h3{font-size:16.5px;margin:26px 0 8px;}
+  .bp-article p,.bp-article li{font-size:14px;line-height:1.75;}
+
+  .bp-article ol li{padding-left:40px;margin-bottom:20px;}
+  .bp-article ol li::before{width:28px;height:28px;font-size:12.5px;}
+
+  .bp-article blockquote{padding:16px 20px;font-size:14px;margin:22px 0;}
+  .bp-tip{padding:16px 18px;gap:10px;margin:22px 0;}
+  .bp-tip p{font-size:13.5px;}
+
+  .bp-article pre{padding:16px;margin:18px 0;}
+  .bp-article pre code{font-size:12px;}
+  .bp-article code{font-size:12.5px;padding:2px 6px;}
+
+  .bp-article table{font-size:12.5px;display:block;overflow-x:auto;white-space:nowrap;}
+  .bp-article table th,.bp-article table td{padding:10px 12px;}
+
+  .bp-img-row{flex-direction:column;gap:14px;margin:24px 0;}
+  .bp-article-img{margin:24px 0;}
+
+  .bp-tags{margin-top:32px;padding-top:20px;}
+  .bp-tag{font-size:10px;padding:5px 13px;}
+
+  .bp-sidebar-card{padding:22px;margin-bottom:16px;border-radius:10px;}
+  .bp-sidebar-card h4{font-size:12px;margin-bottom:16px;padding-bottom:13px;}
+
+  .bp-toc-link{padding:11px 13px;}
+  .bp-toc-num{width:28px;height:28px;font-size:11.5px;}
+  .bp-toc-text{font-size:13px;}
+
+  .bp-related-thumb{width:46px;height:46px;font-size:17px;}
+  .bp-related-info strong{font-size:12.5px;}
+
+  .bp-cta{padding:26px 22px;}
+  .bp-cta h4{font-size:16px;}
+  .bp-cta p{font-size:12.5px;margin-bottom:18px;}
+  .bp-cta a{padding:11px 20px;font-size:12px;}
+
+  .bp-back{font-size:11.5px;}
+}
+
+/* ----- PHONE: 480px and below ----- */
+@media (max-width:480px){
+  .bp-hero{padding:36px 16px 0;}
+  .bp-hero h1{font-size:22px;line-height:1.38;margin-bottom:20px;}
+  .bp-hero-meta{gap:8px;margin-bottom:18px;}
+  .bp-cat{font-size:9.5px;padding:4px 10px;}
+  .bp-date,.bp-readtime{font-size:10.5px;gap:4px;}
+
+  .bp-author{padding-bottom:22px;gap:10px;}
+  .bp-avatar{width:34px;height:34px;font-size:11.5px;}
+
+  .bp-layout{padding:0 12px 48px !important;gap:20px !important;}
+  .bp-main{padding-top:20px;}
+  .bp-article{padding:18px 14px;border-radius:8px;}
+
+  .bp-cover{height:160px;margin-bottom:24px;border-radius:6px;}
+  .bp-cover i{font-size:46px !important;}
+
+  .bp-article h2{font-size:18px;margin:28px 0 12px;padding-bottom:11px;}
+  .bp-article h3{font-size:15px;margin:22px 0 8px;}
+  .bp-article p,.bp-article li{font-size:13.5px;line-height:1.7;margin-bottom:16px;}
+
+  .bp-article ol li{padding-left:36px;margin-bottom:18px;}
+  .bp-article ol li::before{width:25px;height:25px;font-size:11.5px;top:-1px;}
+
+  .bp-article blockquote{padding:14px 16px;font-size:13px;margin:18px 0;}
+  .bp-tip{padding:14px 15px;gap:8px;margin:18px 0;flex-direction:column;}
+  .bp-tip i{font-size:16px;}
+  .bp-tip p{font-size:12.5px;}
+
+  .bp-article pre{padding:13px;margin:16px 0;}
+  .bp-article pre code{font-size:11px;}
+
+  .bp-article table{font-size:11.5px;}
+  .bp-article table th,.bp-article table td{padding:8px 10px;}
+
+  .bp-tags{margin-top:26px;padding-top:16px;gap:6px;}
+  .bp-tag{font-size:9.5px;padding:4px 11px;}
+
+  .bp-back{font-size:11px;gap:6px;}
+
+  .bp-sidebar-card{padding:18px;margin-bottom:14px;}
+  .bp-sidebar-card h4{font-size:11.5px;margin-bottom:14px;padding-bottom:11px;gap:6px;}
+
+  .bp-toc-list{gap:6px;}
+  .bp-toc-link{padding:10px 11px;gap:10px;}
+  .bp-toc-num{width:26px;height:26px;font-size:11px;border-radius:7px;}
+  .bp-toc-text{font-size:12.5px;}
+
+  .bp-related{gap:11px;padding:12px 0;}
+  .bp-related-thumb{width:42px;height:42px;border-radius:10px;font-size:16px;}
+  .bp-related-info strong{font-size:12px;}
+  .bp-related-info span{font-size:10px;}
+
+  .bp-cta{padding:22px 18px;}
+  .bp-cta h4{font-size:15px;margin-bottom:8px;}
+  .bp-cta p{font-size:12px;margin-bottom:16px;line-height:1.6;}
+  .bp-cta a{padding:10px 18px;font-size:11.5px;}
+}
+
+/* ----- SMALL PHONE: 360px and below (covers iPhone SE, 320px devices) ----- */
+@media (max-width:360px){
+  .bp-hero{padding:28px 12px 0;}
+  .bp-hero h1{font-size:19px;line-height:1.4;margin-bottom:16px;}
+  .bp-hero-meta{gap:6px;}
+  .bp-cat{font-size:9px;padding:4px 9px;}
+  .bp-date,.bp-readtime{font-size:10px;}
+
+  .bp-author{gap:8px;padding-bottom:18px;}
+  .bp-avatar{width:30px;height:30px;font-size:10.5px;}
+  .bp-author-info strong{font-size:12.5px;}
+  .bp-author-info span{font-size:10px;}
+
+  .bp-layout{padding:0 8px 36px !important;gap:16px !important;}
+  .bp-article{padding:14px 10px;}
+
+  .bp-cover{height:130px;margin-bottom:18px;}
+  .bp-cover i{font-size:36px !important;}
+
+  .bp-article h2{font-size:16.5px;margin:22px 0 10px;}
+  .bp-article h3{font-size:14px;}
+  .bp-article p,.bp-article li{font-size:13px;}
+
+  .bp-article ol li{padding-left:32px;}
+  .bp-article ol li::before{width:22px;height:22px;font-size:10.5px;}
+
+  .bp-sidebar-card{padding:14px;}
+  .bp-toc-num{width:24px;height:24px;font-size:10.5px;}
+  .bp-toc-text{font-size:12px;}
+
+  .bp-cta{padding:18px 14px;}
+  .bp-cta a{width:100%;text-align:center;}
+}
+
+/* Salesforce Chat Button */
+.embeddedMessagingConversationButton {
+  bottom: 90px !important;
+  right: 24px !important;
+  z-index: 99999 !important;
+}
+
+.embeddedMessagingFrame {
+  z-index: 99999 !important;
+}
+
+@media (max-width: 768px) {
+  .embeddedMessagingConversationButton {
+    bottom: 80px !important;
+    right: 16px !important;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="preloader"><div class="spinner"></div></div>
+  <!-- End Preloader Area -->
+
+  <!-- Start Top Header Area -->
+  <div class="top-header-area">
+    <div class="container-fluid ">
+      <div class="d-flex justify-content-between ps-sm-2">
+        <ul class="social">
+          <li class="whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=%2B917806979823&text&type=phone_number&app_absent=0"
+              target="_blank">
+              <img src="/img/apps/10.png" alt="whatsapp" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/SubselTech" target="_blank">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/company/subsel-tech-solution/" target="_blank">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-sm-3 gap-1">
+          <div class="option-item">
+            <a href="tel:+1 210-508-1986" class="call-button">
+              <i class="bx bxs-phone-call"></i>
+              +1 210-508-1986
+            </a>
+          </div>
+          <div class="option-item">
+            <a href="tel:+7806979823" class="call-button">
+              <i class="bx bxs-phone-call"></i>
+              +91 78069-79823
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Top Header Area -->
+
+  <!-- Start Navbar Area -->
+  <div class="navbar-area">
+    <div class="main-responsive-nav">
+      <div class="d-flex justify-content-between px-3 ">
+        <div class="logo">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
+            <span class="text-dark ps-2 title">Subsel Tech Solutions</span>
+          </a>
+        </div>
+        <button class="nav-menu-button" data-bs-toggle="offcanvas" data-bs-target="contact_us.htmlnavbar-menu">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start navbar-body" id="navbar-menu">
+        <div class="offcanvas-header border-bottom">
+          <div class="logo">
+            <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
+          </div>
+          <span class="offcanvas-title text-dark ps-2">Subsel Tech Solutions</span>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item border-bottom">
+              <a href="/index.html" class="nav-link active"> HOME </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="aboutus.html" class="nav-link"> ABOUT US </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="contact_us.html" class="nav-link service-drop" type="button">
+                <span>SERVICES</span>
+                <i class="bx bx-chevron-down"></i>
+              </a>
+              <ul class="row ps-4" id="service_drop_menu">
+                <div class="col-lg-6 col-md-12 mb-3 nav-service">
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Migrate To Salesforce</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/sale_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Consulting</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Salesforce Success Advisory
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Salesforce Health CheckUp
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Salesforce Org CleanUp
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Salesforce Access Control
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Lightning Migration
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Data Migration
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">
+                      Salesforce Data BackUp
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Core Product Implementation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/sale_cloud.html" class="nav-link">
+                      Sales Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/service_cloud.html" class="nav-link">
+                      Service Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/salesforce_cpq.html" class="nav-link">
+                      Salesforce CPQ Implementation
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/field_service_lightning.html" class="nav-link">
+                      Field Service lightning
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/community_cloud.html" class="nav-link">
+                      Community Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      Marketing Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/finance_service_cloud.html" class="nav-link">
+                      Finance Service Cloud
+                    </a>
+                  </li>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 nav-service">
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Industry Product Implementation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/sale_cloud.html" class="nav-link">
+                      Nonprofit
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/service_cloud.html" class="nav-link">
+                      Manufacturing Cloud Implementation
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/salesforce_cpq.html" class="nav-link">
+                      Education Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/field_service_lightning.html" class="nav-link">
+                      Health Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/community_cloud.html" class="nav-link">
+                      Financial Service Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      B2b CommerceCloud
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 me-2 border-warning side-line"></span>
+                      <span> Salesforce Integration</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      Business Process Optimization
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      Salesforce UI Development
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      Salesforce PDF Document Generation
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Integration</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Data And Analytics</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      Data Cloud
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/marketing_cloud.html" class="nav-link">
+                      Salesforce CRM Analytics
+                    </a>
+                  </li>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 nav-service">
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce AI Implementation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/sale_cloud.html" class="nav-link"> Sales AI </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/service_cloud.html" class="nav-link">
+                      Service AI
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/salesforce_cpq.html" class="nav-link">
+                      Marketing AI
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="/field_service_lightning.html" class="nav-link">
+                      Commerce AI
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/community_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Managed Services</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Admin Support</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Hire A Salesforce Expert</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> AppExchange App Development</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Web App Development</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Mobile App Development</span>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="/product.html" class="nav-link"> PRODUCTS </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="/contact_us.html" class="nav-link"> CONTACT US </a>
+            </li>
+            <li>
+              <div class="consult-button">
+                <div class="d-flex align-items-center contact">
+                  <a href="https://calendar.app.google/Fd56ZBhggFu8DWs86" target="_blank"
+                    class="d-flex align-items-center ">
+                    Book Free Consultation
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-navbar">
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
+            <span class="text-dark ps-2 title">Subsel Tech Solutions</span>
+          </a>
+          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link active"> HOME </a>
+              </li>
+              <li class="nav-item">
+                <a href="aboutus.html" class="nav-link"> ABOUT US </a>
+              </li>
+              <li class="nav-item">
+                <a href="contact_us.html" class="nav-link" type="button">
+                  SERVICES
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <ul class="row dropdown-menu ps-4" class="btn btn-secondary" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                  <div class="col-lg-6 col-md-6 col-sm-12 md-5">
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Migrate To Salesforce
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/sale_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Consulting
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Salesforce Success Advisory
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Salesforce Health CheckUp
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Salesforce Org CleanUp
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Salesforce Access Control
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Lightning Migration
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Data Migration
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="salesforce_development.html" class="nav-link">
+                        Salesforce Data BackUp
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Core Product Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/sale_cloud.html" class="nav-link">
+                        Sales Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/service_cloud.html" class="nav-link">
+                        Service Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/salesforce_cpq.html" class="nav-link">
+                        Salesforce CPQ Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/field_service_lightning.html" class="nav-link">
+                        Field Service lightning
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/community_cloud.html" class="nav-link">
+                        Community Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        Marketing Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/finance_service_cloud.html" class="nav-link">
+                        Finance Service Cloud
+                      </a>
+                    </li>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Industry Product Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/sale_cloud.html" class="nav-link">
+                        Nonprofit
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/service_cloud.html" class="nav-link">
+                        Manufacturing Cloud Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/salesforce_cpq.html" class="nav-link">
+                        Education Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/field_service_lightning.html" class="nav-link">
+                        Health Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/community_cloud.html" class="nav-link">
+                        Financial Service Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        B2b CommerceCloud
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 me-2 border-warning side-line"></span>
+                        Salesforce Integration
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        Business Process Optimization
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        Salesforce UI Development
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        Salesforce PDF Document Generation
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Integration
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Data And Analytics
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        Data Cloud
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/marketing_cloud.html" class="nav-link">
+                        Salesforce CRM Analytics
+                      </a>
+                    </li>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5 mt-0">
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce AI Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/sale_cloud.html" class="nav-link">
+                        Sales AI
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/service_cloud.html" class="nav-link">
+                        Service AI
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/salesforce_cpq.html" class="nav-link">
+                        Marketing AI
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                      <a href="/field_service_lightning.html" class="nav-link">
+                        Commerce AI
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/community_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Managed Services
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Admin Support
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Hire A Salesforce Expert
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        AppExchange App Development
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Web App Development
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Mobile App Development
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="/product.html" class="nav-link"> PRODUCTS </a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact_us.html" class="nav-link"> CONTACT US </a>
+              </li>
+              <li class="nav-item">
+                <a href="/blog.html" class="nav-link"> BLOGS </a>
+              </li>
+                <!-- <li class="nav-item">
+                <a href="/contact_us.html" class="nav-link"> CAREER </a>
+              </li> -->
+            </ul>
+            <div class="others-options">
+              <div class="d-flex align-items-center contact">
+                <a href="https://calendar.app.google/Fd56ZBhggFu8DWs86" target="_blank"
+                  class="d-flex align-items-center ">
+                  Book Free Consultation
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- End Navbar Area -->
+  <div class="bp-navbar-spacer" id="bpNavbarSpacer"></div>
+
+<div class="bp-hero" id="bpHero" style="display:none;">
+  <div class="bp-hero-inner">
+    <div class="bp-hero-meta">
+      <span class="bp-cat" id="bpCat"></span>
+      <span class="bp-date"><i class="ti ti-calendar" style="font-size:12px"></i><span id="bpDate"></span></span>
+      <span class="bp-readtime"><i class="ti ti-clock" style="font-size:12px"></i><span id="bpReadTime"></span></span>
+    </div>
+    <h1 id="bpTitle"></h1>
+    <div class="bp-author">
+      <div class="bp-avatar" id="bpAvatar"></div>
+      <div class="bp-author-info">
+        <strong id="bpAuthor"></strong>
+        <span id="bpRole"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bpNotFound" style="display:none;">
+  <div class="bp-notfound">
+    <i class="ti ti-file-off"></i>
+    <h2>Article Not Found</h2>
+    <p>This article doesn't exist or may have been moved.</p>
+    <a href="blog.html"><i class="ti ti-arrow-left"></i> Back to Blog</a>
+  </div>
+</div>
+<div class="bp-layout" id="bpLayout" style="display:none;">
+<div class="bp-main">
+    <button class="bp-back" onclick="history.back()"><i class="ti ti-arrow-left"></i> Back</button>
+    <div class="bp-article" style="margin-top:24px;">
+      <!-- <div class="bp-cover" id="bpCover"></div> -->
+      <div id="bpContent"></div>
+      <div class="bp-tags" id="bpTags"></div>
+    </div>
+  </div>
+  <aside class="bp-sidebar">
+      <div class="bp-sidebar-inner">
+        <div class="bp-sidebar-card bp-toc-card" id="bpTocCard" style="display:none;">
+          <h4 id="bpTocToggle">
+            <span class="bp-toc-heading"><i class="ti ti-list-numbers"></i>Step by Step Guide</span>
+            <i class="ti ti-chevron-down bp-toc-chevron"></i>
+          </h4>
+          <div class="bp-toc-body" id="bpTocBody">
+            <ul class="bp-toc-list" id="bpTocList"></ul>
+          </div>
+        </div>
+        <div class="bp-sidebar-card">
+          <h4><i class="ti ti-list"></i> Related Articles</h4>
+          <div id="bpRelated"></div>
+        </div>
+        <div class="bp-cta">
+          <h4>Need Help?</h4>
+          <p>Our experts are ready to help you implement and optimize your solutions.</p>
+          <a href="contact_us.html">Book Consultation</a>
+        </div>
+      </div>
+  </aside>
+
+</div>
+
+<script>
+
+function initials(n){ return n.split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase(); }
+
+
+function slugify(text) {
+    return text
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-");
+}
+
+const slug = new URLSearchParams(window.location.search).get("title");
+
+async function loadBlog() {
+
+    try {
+
+        const [posts, bodies] = await Promise.all([
+            fetch("blog-content.json").then(res => {
+                if (!res.ok) {
+                    throw new Error("Failed to load blog-content.json");
+                }
+                return res.json();
+            }),
+
+            fetch("blog-body.json").then(res => {
+                if (!res.ok) {
+                    throw new Error("Failed to load blog-body.json");
+                }
+                return res.json();
+            })
+        ]);
+     
+
+        // Find post using title slug
+        const post = posts.find(
+            p => slugify(p.title) === slug
+        );
+
+        if (!post) {
+            document.getElementById("bpNotFound").style.display = "block";
+            return;
+        }
+
+        // Find body using ID
+        const bodyData = bodies.find(
+            b => b.id === post.id
+        );
+
+        document.getElementById("bpHero").style.display = "block";
+        document.getElementById("bpLayout").style.display = "grid";
+
+        document.title = post.title + " | Subsel Tech Solutions";
+
+        document.getElementById("bpCat").textContent = post.category;
+        document.getElementById("bpTitle").textContent = post.title;
+        document.getElementById("bpAuthor").textContent = post.author;
+        document.getElementById("bpRole").textContent = post.role;
+        document.getElementById("bpDate").textContent = post.date;
+        document.getElementById("bpReadTime").textContent = post.readTime;
+
+        document.getElementById("bpAvatar").textContent =
+    post.author
+        .split(" ")
+        .map(name => name.charAt(0))
+        .join("")
+        .substring(0, 2)
+        .toUpperCase();
+
+        // document.getElementById("bpCover").style.background =
+        //     post.background;
+
+        // document.getElementById("bpCover").innerHTML =
+        //     `<i class="ti ${post.icon}" style="font-size:90px;color:rgba(255,255,255,.18)"></i>`;
+
+        document.getElementById("bpContent").innerHTML =
+            bodyData
+                ? bodyData.body
+                : "<p>Content not available.</p>";
+
+        buildToc();
+
+        renderRelated(posts, post);
+
+        document.getElementById("bpTags").innerHTML =
+            post.tags
+                .map(tag => `<span class="bp-tag">${tag}</span>`)
+                .join("");
+
+    } catch (error) {
+
+        console.error("Error loading blog:", error);
+
+        document.getElementById("bpNotFound").style.display = "block";
+
+        document.getElementById("bpNotFound").innerHTML = `
+            <h2>Something went wrong</h2>
+            <p>Unable to load the blog.</p>
+        `;
+    }
+
+}
+
+loadBlog();
+
+/* ===== Related Articles ===== */
+
+function renderRelated(allPosts, currentPost){
+    const wrap = document.getElementById("bpRelated");
+    if (!wrap) return;
+
+    const related = allPosts
+        .filter(p =>
+            p.id !== currentPost.id &&
+            p.category === currentPost.category
+        )
+        .slice(0, 2);
+
+    if (!related.length) {
+        wrap.innerHTML = `<p style="font-size:12.5px;color:var(--gray);margin:0;">No related articles yet.</p>`;
+        return;
+    }
+
+    wrap.innerHTML = related.map(p => {
+        const thumb = p.thumbnail
+            ? `<img src="${p.thumbnail}" alt="${p.title}" />`
+            : `<i class="ti ${p.icon || 'ti ti-news'}"></i>`;
+
+        return `
+            <a class="bp-related" href="blog-post.html?title=${slugify(p.title)}">
+                <div class="bp-related-thumb" style="${p.background ? `background:${p.background};` : ''}">
+                    ${thumb}
+                </div>
+                <div class="bp-related-info">
+                    <strong>${p.title}</strong>
+                    <span>${p.readTime || ''}</span>
+                </div>
+            </a>
+        `;
+    }).join("");
+}
+
+/* ===== TOC / Step Guide ===== */
+
+function buildToc(){
+    const content = document.getElementById("bpContent");
+    const tocCard = document.getElementById("bpTocCard");
+    const tocList = document.getElementById("bpTocList");
+
+    const headings = content.querySelectorAll("h2");
+
+    tocList.innerHTML = "";
+
+    if (!headings.length) {
+        tocCard.style.display = "none";
+        return;
+    }
+
+    headings.forEach((heading, index) => {
+        if (!heading.id) {
+            heading.id = "section-" + (index + 1) + "-" +
+                slugify(heading.textContent.trim());
+        }
+
+        const li = document.createElement("li");
+        li.className = "bp-toc-item";
+
+        const link = document.createElement("button");
+        link.type = "button";
+        link.className = "bp-toc-link";
+        link.dataset.target = heading.id;
+        link.innerHTML = `
+            <span class="bp-toc-num">${String(index + 1).padStart(2, "0")}</span>
+            <span class="bp-toc-text">${heading.textContent.trim()}</span>
+        `;
+
+        link.addEventListener("click", () => {
+            document.querySelectorAll(".bp-toc-link").forEach(l => l.classList.remove("is-active"));
+            link.classList.add("is-active");
+            scrollToHeading(heading.id);
+        });
+
+        li.appendChild(link);
+        tocList.appendChild(li);
+    });
+
+    tocCard.style.display = "block";
+
+    setupTocAccordion();
+
+    setupTocScrollSpy(headings);
+}
+
+function setupTocAccordion(){
+    const tocCard = document.getElementById("bpTocCard");
+    const tocToggle = document.getElementById("bpTocToggle");
+
+    if (!tocCard || !tocToggle || tocToggle.dataset.bound) return;
+    tocToggle.dataset.bound = "true";
+
+    tocToggle.addEventListener("click", () => {
+        tocCard.classList.toggle("is-open");
+    });
+}
+
+function getScrollContainer(){
+    return window;
+}
+
+function getHeaderOffset(){
+    const header = document.querySelector(".navbar-area");
+    return (header ? header.offsetHeight : 0) + 24;
+}
+
+function scrollToHeading(id){
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    const container = getScrollContainer();
+    const headerOffset = getHeaderOffset();
+
+    if (container === window) {
+        const top = target.getBoundingClientRect().top +
+            window.pageYOffset -
+            headerOffset;
+        window.scrollTo({ top, behavior: "smooth" });
+    } else {
+        const containerTop = container.getBoundingClientRect().top;
+        const targetTop = target.getBoundingClientRect().top;
+        const top = container.scrollTop +
+            (targetTop - containerTop) -
+            headerOffset;
+        container.scrollTo({ top, behavior: "smooth" });
+    }
+}
+
+function setupTocScrollSpy(headings){
+    const links = document.querySelectorAll(".bp-toc-link");
+    let container = getScrollContainer();
+
+    function onScroll(){
+        const offset = getHeaderOffset() + 10;
+        let activeId = headings[0].id;
+
+        headings.forEach(heading => {
+            const top = container === window
+                ? heading.getBoundingClientRect().top
+                : heading.getBoundingClientRect().top -
+                  container.getBoundingClientRect().top;
+
+            if (top - offset <= 0) {
+                activeId = heading.id;
+            }
+        });
+
+        links.forEach(link => {
+            link.classList.toggle("is-active", link.dataset.target === activeId);
+        });
+    }
+
+    function bindContainer(){
+        const next = getScrollContainer();
+        if (next !== container) {
+            container.removeEventListener("scroll", onScroll);
+            container = next;
+            container.addEventListener("scroll", onScroll, { passive: true });
+        }
+        onScroll();
+    }
+
+    container.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", bindContainer, { passive: true });
+    onScroll();
+}
+
+/* ===== Sticky Header ===== */
+
+(function(){
+    const header = document.querySelector(".navbar-area");
+    const spacer = document.getElementById("bpNavbarSpacer");
+    if (!header) return;
+
+    const STICK_AT = 80;
+    let container = getScrollContainer();
+
+    function getScrollPos(){
+        return container === window ? window.scrollY : container.scrollTop;
+    }
+
+    function onHeaderScroll(){
+        if (getScrollPos() > STICK_AT) {
+            if (!header.classList.contains("is-sticky")) {
+                // capture height before fixing, so the spacer can hold the gap
+                if (spacer) spacer.style.height = header.offsetHeight + "px";
+                header.classList.add("is-sticky");
+                if (spacer) spacer.classList.add("is-active");
+            }
+        } else {
+            header.classList.remove("is-sticky");
+            if (spacer) spacer.classList.remove("is-active");
+        }
+    }
+
+    function bindHeaderContainer(){
+        const next = getScrollContainer();
+        if (next !== container) {
+            container.removeEventListener("scroll", onHeaderScroll);
+            container = next;
+            container.addEventListener("scroll", onHeaderScroll, { passive: true });
+        }
+        onHeaderScroll();
+    }
+
+    container.addEventListener("scroll", onHeaderScroll, { passive: true });
+    window.addEventListener("resize", bindHeaderContainer, { passive: true });
+    onHeaderScroll();
+})();
+
+var jq = document.createElement('script');
+jq.src = '/js/jquery.min.js';
+jq.onload = function(){
+  jQuery(document).ready(function($){
+    $('.preloader').addClass('preloader-deactivate').hide();
+  });
+};
+document.body.appendChild(jq);
+
+</script>
+  <script src="/js/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <!--=== MeanMenu JS ===-->
+  <script src="/js/jquery.meanmenu.min.js"></script>
+</body>
+</html>

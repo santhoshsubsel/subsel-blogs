@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Subsel Tech Solutions</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+ <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="/css/animate.min.css" />
+  <!--=== BoxIcons CSS ===-->
+  <link rel="stylesheet" href="/css/boxicons.min.css" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+  <!-- Owl Default CSS -->
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="/css/magnific-popup.min.css" />
+  <!-- Odometer CSS -->
+  <link rel="stylesheet" href="/css/odometer.min.css" />
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="/css/nice-select.min.css" />
+  <!--=== MeanMenu CSS ===-->
+  <link rel="stylesheet" href="/css/meanmenu.min.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- Dark CSS -->
+  <link rel="stylesheet" href="/css/dark.css" />
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <!-- Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--=== Title ===-->
+  <title>Subsel Tech Solutions-Subsel Tech Solutions</title>
+  <link rel="icon" type="image/png" href="/img/subselLogo.png" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--navy:#0c2340;--blue:#1a4fa0;--accent:#0ea5e9;--light:#f4f7fc;--white:#fff;--gray:#64748b;--border:#e2e8f0;}
+body{font-family:'Poppins',sans-serif;background:var(--light);color:#1e293b;}
+.hero{background:linear-gradient(135deg,#051529 0%,#0c2340 45%,#1a4fa0 100%);padding:80px 40px 90px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%230ea5e9' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+.hero-badge{display:inline-block;background:rgba(14,165,233,.15);border:1px solid rgba(14,165,233,.3);color:#7dd3fc;font-size:12px;font-weight:500;padding:6px 16px;border-radius:50px;margin-bottom:20px;letter-spacing:.5px;position:relative;}
+.hero h1{font-size:46px;font-weight:700;color:#fff;margin-bottom:16px;line-height:1.2;position:relative;}
+.hero h1 span{background:linear-gradient(90deg,#0ea5e9,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{color:#94a3b8;font-size:16px;max-width:640px;margin:0 auto 32px;line-height:1.8;position:relative;}
+.hero-stats{display:flex;gap:40px;justify-content:center;margin-top:40px;position:relative;}
+.hero-stat{text-align:center;}
+.hero-stat strong{display:block;font-size:28px;font-weight:700;color:#fff;}
+.hero-stat span{font-size:12px;color:#64748b;}
+.hero-divider{width:1px;height:50px;background:rgba(255,255,255,.1);align-self:center;}
+
+.filter-bar{padding:32px 40px 0;display:flex;gap:10px;flex-wrap:wrap;}
+.filter-btn{padding:8px 20px;border-radius:50px;border:1.5px solid var(--border);background:#fff;font-size:13px;font-weight:500;color:#64748b;cursor:pointer;transition:.2s;font-family:'Poppins',sans-serif;}
+.filter-btn:hover{border-color:var(--accent);color:var(--accent);}
+.filter-btn.active{background:var(--blue);border-color:var(--blue);color:#fff;}
+.container{max-width:1200px;margin:0 auto;padding:32px 40px 60px;}
+.cat-banner{border-radius:16px;padding:36px 40px;margin-bottom:32px;display:none;align-items:center;gap:24px;position:relative;overflow:hidden;}
+.cat-banner.show{display:flex;}
+.cat-banner-icon{width:64px;height:64px;border-radius:16px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;flex-shrink:0;}
+.cat-banner-text h2{font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;}
+.cat-banner-text p{font-size:14px;color:rgba(255,255,255,.75);line-height:1.6;}
+.cat-banner-count{margin-left:auto;text-align:center;flex-shrink:0;}
+.cat-banner-count strong{display:block;font-size:32px;font-weight:700;color:#fff;}
+.cat-banner-count span{font-size:12px;color:rgba(255,255,255,.6);}
+@keyframes shimmer{0%{background-position:-700px 0}100%{background-position:700px 0}}
+.shimmer{background:linear-gradient(90deg,#e2e8f0 25%,#f1f5f9 50%,#e2e8f0 75%);background-size:700px 100%;animation:shimmer 1.4s infinite;}
+.skeleton-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06);}
+.sk-img{height:220px;width:100%;}
+.sk-body{padding:24px;}
+.sk-tag{height:22px;width:80px;border-radius:50px;margin-bottom:14px;}
+.sk-title{height:18px;width:90%;border-radius:4px;margin-bottom:10px;}
+.sk-title2{height:18px;width:70%;border-radius:4px;margin-bottom:16px;}
+.sk-line{height:13px;border-radius:4px;margin-bottom:8px;}
+.sk-btn{height:38px;width:120px;border-radius:50px;margin-top:16px;}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:28px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.blog-card{ background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 2px 16px rgba(0,0,0,.06); border:1px solid #f1f5f9; transition:transform .3s, box-shadow .3s; opacity:0; display:flex; flex-direction:column; height:100%; }
+.blog-card.visible{ animation:fadeUp .5s ease forwards; }
+.blog-card:hover{ transform:translateY(-8px); box-shadow:0 20px 40px rgba(0,0,0,.12); }
+.card-img{height:220px;width:100%;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.card-img-icon{font-size:48px;opacity:.3;color:#fff;position:relative;z-index:1;}
+.card-img-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,21,41,.75) 0%,transparent 60%);z-index:2;}
+.card-category{position:absolute;top:16px;left:16px;background:rgba(14,165,233,.9);color:#fff;font-size:11px;font-weight:600;padding:4px 12px;border-radius:50px;letter-spacing:.5px;backdrop-filter:blur(4px);z-index:3;}
+.card-date{position:absolute;bottom:16px;left:16px;color:rgba(255,255,255,.85);font-size:11.5px;display:flex;align-items:center;gap:5px;z-index:3;}
+.card-body{ padding:24px; display:flex; flex-direction:column; flex:1; }
+.card-title{
+    font-size:16px;
+    font-weight:600;
+    color:#0f172a;
+    line-height:1.5;
+    margin-bottom:10px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    min-height:48px;
+}
+.card-text{ font-size:13.5px; color:#64748b; line-height:1.7; margin-bottom:20px; flex:1; }
+.card-footer{ display:flex; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px solid #f1f5f9; margin-top:auto; }
+.card-author{display:flex;align-items:center;gap:8px;}
+.author-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#0ea5e9,#3b82f6);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;flex-shrink:0;}
+.author-name{font-size:12px;font-weight:500;color:#475569;}
+.read-btn{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#1a4fa0,#0ea5e9);color:#fff;text-decoration:none;padding:9px 18px;border-radius:50px;font-size:12.5px;font-weight:600;transition:.2s;border:none;cursor:pointer;font-family:'Poppins',sans-serif;white-space:nowrap;}
+.read-btn:hover{transform:scale(1.04);box-shadow:0 4px 15px rgba(14,165,233,.35);}
+.featured-card{ grid-column:1/-1; display:grid; grid-template-columns:1.2fr 1fr; border-radius:20px; overflow:hidden; background:#fff; box-shadow:0 4px 24px rgba(0,0,0,.08); border:1px solid #f1f5f9; }
+.featured-img{background:linear-gradient(135deg,#051529,#1a4fa0);display:flex;align-items:center;justify-content:center;min-height:280px;position:relative;overflow:hidden;}
+.featured-img-icon{font-size:80px;opacity:.15;color:#fff;position:absolute;}
+.featured-img-content{position:relative;text-align:center;padding:32px;}
+.featured-img-content h2{font-size:22px;font-weight:700;color:#fff;margin-bottom:8px;}
+.featured-img-content p{font-size:13px;color:#7dd3fc;}
+.featured-tag{display:inline-block;background:#0ea5e9;color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;margin-bottom:12px;letter-spacing:1px;}
+.featured-body{ padding:36px; display:flex; flex-direction:column; height:100%; }
+.featured-body .card-footer{ margin-top:auto; }
+.featured-category{ font-size:11px; font-weight:600; color:var(--accent); text-transform:uppercase; letter-spacing:1px; margin-bottom:12px; }
+.featured-title{ font-size:22px; font-weight:700; color:#0f172a; line-height:1.35; margin-bottom:12px; }
+.featured-text{ font-size:14px; color:#64748b; line-height:1.8; margin-bottom:24px; flex:1; }
+.results-info{font-size:13px;color:#64748b;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.results-info strong{color:#0f172a;}
+.sort-select{padding:7px 14px;border-radius:8px;border:1.5px solid var(--border);background:#fff;font-size:13px;font-family:'Poppins',sans-serif;color:#64748b;cursor:pointer;outline:none;}
+.sort-select:focus{border-color:var(--accent);}
+.no-posts{text-align:center;padding:60px 20px;color:#94a3b8;font-size:14px;grid-column:1/-1;}
+.pagination{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:48px;flex-wrap:wrap;}
+.page-btn{min-width:40px;height:40px;padding:0 14px;border-radius:10px;border:1.5px solid var(--border);background:#fff;font-size:14px;font-weight:500;color:#64748b;cursor:pointer;transition:.2s;font-family:'Poppins',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:4px;}
+.page-btn:hover{border-color:var(--accent);color:var(--accent);}
+.page-btn.active{background:var(--blue);border-color:var(--blue);color:#fff;}
+.page-btn.disabled{opacity:.4;cursor:not-allowed;pointer-events:none;}
+.coming-soon-btn{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#64748b,#94a3b8);color:#fff;padding:9px 18px;border-radius:50px;font-size:12px;font-weight:600;font-family:'Poppins',sans-serif;cursor:default;}
+.draft-badge{display:inline-block;font-size:10px;background:#fef3c7;color:#92400e;padding:2px 8px;border-radius:50px;font-weight:600;margin-bottom:8px;letter-spacing:.3px;}
+
+@media(max-width:900px){
+  .hero{padding:60px 20px 70px;}
+  .hero h1{font-size:32px;}
+  .hero-stats{gap:20px;}
+  .filter-bar{padding:24px 20px 0;}
+  .container{padding:24px 20px 40px;}
+  .blog-grid{grid-template-columns:1fr;}
+  .featured-card{grid-template-columns:1fr;}
+  .cat-banner{flex-wrap:wrap;}
+  .cat-banner-count{margin-left:0;}
+
+  .filter-toggle{
+    margin:10px 20px 0;
+  }
+}
+@media(max-width:480px){
+  .hero h1{font-size:26px;}
+  .hero-stats{flex-direction:column;gap:16px;}
+  .hero-divider{display:none;}
+}
+.filter-bar{
+    padding:32px 40px 0;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    max-height:120px;
+    overflow:hidden;
+    transition:all .3s ease;
+}
+.filter-bar.expanded{
+    max-height:1000px;
+}
+.filter-toggle{
+    margin:10px 70px 0;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    border:none;
+    color:#0ea5e9;
+    cursor:pointer;
+    font-family:Poppins,sans-serif;
+    font-size:13px;
+}
+.filter-footer{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:16px;
+}
+/* Responsive navbar padding — sm:px-4 md:px-8 lg:px-12 */
+@media(min-width:576px){
+  .bp-nav-container{ padding-left:1rem !important; padding-right:1rem !important; }
+}
+@media(min-width:768px){
+  .bp-nav-container{ padding-left:2rem !important; padding-right:2rem !important; }
+}
+@media(min-width:992px){
+  .bp-nav-container{ padding-left:3rem !important; padding-right:3rem !important; }
+}
+
+/* STICKY HEADER */
+.navbar-area.is-sticky{
+  -webkit-animation: none;
+  animation: none;
+}
+.bp-navbar-spacer{
+  display:none;
+  height:0;
+}
+.bp-navbar-spacer.is-active{
+  display:block;
+}
+</style>
+</head>
+<body>
+  <!-- Start Preloader Area -->
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+  <!-- End Preloader Area -->
+
+  <!-- Start Top Header Area -->
+  <div class="top-header-area">
+    <div class="container-fluid ">
+      <div class="d-flex justify-content-between ps-sm-2">
+        <ul class="social">
+          <li class="whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=%2B917806979823&text&type=phone_number&app_absent=0"
+              target="_blank">
+              <img src="/img/apps/10.png" alt="whatsapp" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/SubselTech" target="_blank">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/company/subsel-tech-solution/" target="_blank">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-sm-3 gap-1">
+          <div class="option-item">
+            <a href="tel:+1 210-508-1986" class="call-button">
+              <i class="bx bxs-phone-call"></i>
+              +1 210-508-1986
+            </a>
+          </div>
+          <div class="option-item">
+            <a href="tel:+7806979823" class="call-button">
+              <i class="bx bxs-phone-call"></i>
+              +91 78069-79823
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Top Header Area -->
+
+  <!-- Start Navbar Area -->
+  <div class="navbar-area">
+    <div class="main-responsive-nav">
+      <div class="d-flex justify-content-between px-3 ">
+        <div class="logo">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
+            <span class="text-dark ps-2 title">Subsel Tech Solutions</span>
+          </a>
+        </div>
+        <button class="nav-menu-button" data-bs-toggle="offcanvas" data-bs-target="contact_us.htmlnavbar-menu">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start navbar-body" id="navbar-menu">
+        <div class="offcanvas-header border-bottom">
+          <div class="logo">
+            <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
+          </div>
+          <span class="offcanvas-title text-dark ps-2">Subsel Tech Solutions</span>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item border-bottom">
+              <a href="/index.html" class="nav-link active"> HOME </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="aboutus.html" class="nav-link"> ABOUT US </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="contact_us.html" class="nav-link service-drop" type="button">
+                <span>SERVICES</span>
+                <i class="bx bx-chevron-down"></i>
+              </a>
+              <ul class="row ps-4" id="service_drop_menu">
+                <div class="col-lg-6 col-md-12 mb-3 nav-service">
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Migrate To Salesforce</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/sale_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Consulting</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Salesforce Success Advisory</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Salesforce Health CheckUp</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Salesforce Org CleanUp</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Salesforce Access Control</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Lightning Migration</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Data Migration</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <a href="salesforce_development.html" class="nav-link">Salesforce Data BackUp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Core Product Implementation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3"><a href="/sale_cloud.html" class="nav-link">Sales Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/service_cloud.html" class="nav-link">Service Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/salesforce_cpq.html" class="nav-link">Salesforce CPQ Implementation</a></li>
+                  <li class="nav-item ms-3"><a href="/field_service_lightning.html" class="nav-link">Field Service lightning</a></li>
+                  <li class="nav-item ms-3"><a href="/community_cloud.html" class="nav-link">Community Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Marketing Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/finance_service_cloud.html" class="nav-link">Finance Service Cloud</a></li>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 nav-service">
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Industry Product Implementation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3"><a href="/sale_cloud.html" class="nav-link">Nonprofit</a></li>
+                  <li class="nav-item ms-3"><a href="/service_cloud.html" class="nav-link">Manufacturing Cloud Implementation</a></li>
+                  <li class="nav-item ms-3"><a href="/salesforce_cpq.html" class="nav-link">Education Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/field_service_lightning.html" class="nav-link">Health Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/community_cloud.html" class="nav-link">Financial Service Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">B2b CommerceCloud</a></li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 me-2 border-warning side-line"></span>
+                      <span> Salesforce Integration</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Business Process Optimization</a></li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Salesforce UI Development</a></li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Salesforce PDF Document Generation</a></li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Integration</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Data And Analytics</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Data Cloud</a></li>
+                  <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Salesforce CRM Analytics</a></li>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 nav-service">
+                  <li class="nav-item">
+                    <a href="salesforce_development.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce AI Implementation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3"><a href="/sale_cloud.html" class="nav-link"> Sales AI </a></li>
+                  <li class="nav-item ms-3"><a href="/service_cloud.html" class="nav-link">Service AI</a></li>
+                  <li class="nav-item ms-3"><a href="/salesforce_cpq.html" class="nav-link">Marketing AI</a></li>
+                  <li class="nav-item ms-3"><a href="/field_service_lightning.html" class="nav-link">Commerce AI</a></li>
+                  <li class="nav-item">
+                    <a href="/community_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Managed Services</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Salesforce Admin Support</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Hire A Salesforce Expert</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> AppExchange App Development</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Web App Development</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/marketing_cloud.html" class="nav-link fw-bolder side-line d-flex">
+                      <span class="border border-start border-2 border-warning me-2"></span>
+                      <span> Mobile App Development</span>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="/product.html" class="nav-link"> PRODUCTS </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="/contact_us.html" class="nav-link"> CONTACT US </a>
+            </li>
+            <li>
+              <div class="consult-button">
+                <div class="d-flex align-items-center contact">
+                  <a href="https://calendar.app.google/Fd56ZBhggFu8DWs86" target="_blank"
+                    class="d-flex align-items-center ">
+                    Book Free Consultation
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-navbar">
+      <div class="container-fluid p-0 bp-nav-container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
+            <span class="text-dark ps-2 title">Subsel Tech Solutions</span>
+          </a>
+          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link"> HOME </a>
+              </li>
+              <li class="nav-item">
+                <a href="aboutus.html" class="nav-link"> ABOUT US </a>
+              </li>
+              <li class="nav-item">
+                <a href="contact_us.html" class="nav-link" type="button">
+                  SERVICES
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <ul class="row dropdown-menu ps-4" class="btn btn-secondary" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                  <div class="col-lg-6 col-md-6 col-sm-12 md-5">
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Migrate To Salesforce
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/sale_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Consulting
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Salesforce Success Advisory</a></li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Salesforce Health CheckUp</a></li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Salesforce Org CleanUp</a></li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Salesforce Access Control</a></li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Lightning Migration</a></li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Data Migration</a></li>
+                    <li class="nav-item ms-3"><a href="salesforce_development.html" class="nav-link">Salesforce Data BackUp</a></li>
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Core Product Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3"><a href="/sale_cloud.html" class="nav-link">Sales Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/service_cloud.html" class="nav-link">Service Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/salesforce_cpq.html" class="nav-link">Salesforce CPQ Implementation</a></li>
+                    <li class="nav-item ms-3"><a href="/field_service_lightning.html" class="nav-link">Field Service lightning</a></li>
+                    <li class="nav-item ms-3"><a href="/community_cloud.html" class="nav-link">Community Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Marketing Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/finance_service_cloud.html" class="nav-link">Finance Service Cloud</a></li>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Industry Product Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3"><a href="/sale_cloud.html" class="nav-link">Nonprofit</a></li>
+                    <li class="nav-item ms-3"><a href="/service_cloud.html" class="nav-link">Manufacturing Cloud Implementation</a></li>
+                    <li class="nav-item ms-3"><a href="/salesforce_cpq.html" class="nav-link">Education Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/field_service_lightning.html" class="nav-link">Health Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/community_cloud.html" class="nav-link">Financial Service Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">B2b CommerceCloud</a></li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 me-2 border-warning side-line"></span>
+                        Salesforce Integration
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Business Process Optimization</a></li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Salesforce UI Development</a></li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Salesforce PDF Document Generation</a></li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Integration
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Data And Analytics
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Data Cloud</a></li>
+                    <li class="nav-item ms-3"><a href="/marketing_cloud.html" class="nav-link">Salesforce CRM Analytics</a></li>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-5 mt-0">
+                    <li class="nav-item">
+                      <a href="salesforce_development.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce AI Implementation
+                      </a>
+                    </li>
+                    <li class="nav-item ms-3"><a href="/sale_cloud.html" class="nav-link">Sales AI</a></li>
+                    <li class="nav-item ms-3"><a href="/service_cloud.html" class="nav-link">Service AI</a></li>
+                    <li class="nav-item ms-3"><a href="/salesforce_cpq.html" class="nav-link">Marketing AI</a></li>
+                    <li class="nav-item ms-3"><a href="/field_service_lightning.html" class="nav-link">Commerce AI</a></li>
+                    <li class="nav-item">
+                      <a href="/community_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Managed Services
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Salesforce Admin Support
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Hire A Salesforce Expert
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        AppExchange App Development
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Web App Development
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/marketing_cloud.html" class="nav-link fw-bolder fs-5 side-line">
+                        <span class="border border-start border-2 border-warning me-2"></span>
+                        Mobile App Development
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="/product.html" class="nav-link"> PRODUCTS </a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact_us.html" class="nav-link"> CONTACT US </a>
+              </li>
+              <li class="nav-item">
+                <a href="/blog.html" class="nav-link active"> BLOGS </a>
+              </li>
+            </ul>
+            <div class="others-options">
+              <div class="d-flex align-items-center contact">
+                <a href="https://calendar.app.google/Fd56ZBhggFu8DWs86" target="_blank"
+                  class="d-flex align-items-center ">
+                  Book Free Consultation
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- End Navbar Area -->
+
+  <!-- =====================================================
+       FIX ADDITION 1 OF 2: Spacer div (from blog-post.html)
+       Holds the gap when navbar becomes position:fixed
+       ===================================================== -->
+  <div class="bp-navbar-spacer" id="bpNavbarSpacer"></div>
+
+<section class="hero">
+  <div class="hero-badge">&#128240; Insights &amp; Resources</div>
+  <h1>Our <span>Blog</span></h1>
+  <p>Explore Salesforce insights, CRM best practices, AI innovations, integration strategies, and digital transformation solutions from our experts.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>50+</strong><span>Articles Published</span></div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat"><strong>6</strong><span>Categories</span></div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat"><strong>10K+</strong><span>Monthly Readers</span></div>
+  </div>
+</section>
+
+
+<div class="filter-bar" id="filterBar">
+
+</div>
+ <div class="filter-footer">
+        <button id="toggleFilters" class="filter-toggle">
+            Show More
+            <i class="ti ti-chevron-down"></i>
+        </button>
+    </div>
+
+
+<div class="container">
+  <div class="cat-banner" id="catBanner">
+    <div class="cat-banner-icon"><i id="catBannerIcon" class="ti ti-star"></i></div>
+    <div class="cat-banner-text">
+      <h2 id="catBannerTitle"></h2>
+      <p id="catBannerDesc"></p>
+    </div>
+    <div class="cat-banner-count">
+      <strong id="catBannerCount"></strong>
+      <span>Articles</span>
+    </div>
+  </div>
+
+  <div class="results-info" id="resultsInfo" style="display:none;">
+    <span id="resultsText"></span>
+    <select class="sort-select" id="sortSelect">
+      <option value="newest">Newest First</option>
+      <option value="oldest">Oldest First</option>
+      <option value="az">A–Z</option>
+    </select>
+  </div>
+
+  <div class="blog-grid" id="skeletonGrid">
+    <div class="skeleton-card"><div class="sk-img shimmer"></div><div class="sk-body"><div class="sk-tag shimmer"></div><div class="sk-title shimmer"></div><div class="sk-title2 shimmer"></div><div class="sk-line shimmer" style="width:100%"></div><div class="sk-line shimmer" style="width:80%"></div><div class="sk-line shimmer" style="width:60%"></div><div class="sk-btn shimmer"></div></div></div>
+    <div class="skeleton-card"><div class="sk-img shimmer"></div><div class="sk-body"><div class="sk-tag shimmer"></div><div class="sk-title shimmer"></div><div class="sk-title2 shimmer"></div><div class="sk-line shimmer" style="width:100%"></div><div class="sk-line shimmer" style="width:80%"></div><div class="sk-line shimmer" style="width:60%"></div><div class="sk-btn shimmer"></div></div></div>
+    <div class="skeleton-card"><div class="sk-img shimmer"></div><div class="sk-body"><div class="sk-tag shimmer"></div><div class="sk-title shimmer"></div><div class="sk-title2 shimmer"></div><div class="sk-line shimmer" style="width:100%"></div><div class="sk-line shimmer" style="width:80%"></div><div class="sk-line shimmer" style="width:60%"></div><div class="sk-btn shimmer"></div></div></div>
+  </div>
+
+  <div class="blog-grid" id="realGrid" style="display:none;"></div>
+  <div class="pagination" id="pagination" style="display:none;"></div>
+</div>
+
+<script>
+
+let ALL_POSTS = [];
+let isInitialRender = true;
+
+fetch("blog-posts.json")
+.then(response => response.json())
+.then(data => {
+    ALL_POSTS = [...data];
+    createCategoryButtons();
+    initFilterToggle();
+    filteredPosts = ALL_POSTS;
+    document.getElementById("skeletonGrid").style.display = "none";
+    console.log(data);
+    renderPosts();
+});
+
+function createCategoryButtons(){
+    const filterBar = document.getElementById("filterBar");
+    const categories = [
+        "All Posts",
+        ...new Set(ALL_POSTS.map(post => post.cat))
+    ];
+    filterBar.innerHTML = categories.map((cat,index)=>`
+        <button
+            class="filter-btn ${index===0?'active':''}"
+            data-cat="${cat}">
+            ${cat}
+        </button>
+    `).join('');
+    document.querySelectorAll('.filter-btn').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+            document
+            .querySelectorAll('.filter-btn')
+            .forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+            currentCat = btn.dataset.cat;
+            currentPage = 1;
+            filteredPosts = getPostsForCat(currentCat);
+            renderPosts();
+        });
+    });
+}
+
+function initFilterToggle(){
+    const bar = document.getElementById("filterBar");
+    const btn = document.getElementById("toggleFilters");
+    if(bar.scrollHeight <= 104){
+        btn.style.display = "none";
+        return;
+    }
+    btn.style.display = "inline-flex";
+    btn.onclick = ()=>{
+        bar.classList.toggle("expanded");
+        btn.textContent =
+            bar.classList.contains("expanded")
+            ? "Show Less"
+            : "Show More";
+    };
+}
+
+const POSTS_PER_PAGE = 6;
+let currentCat = 'All Posts', currentPage = 1, currentSort = 'newest', filteredPosts = [];
+
+function initials(n){ return n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase(); }
+
+function sortPosts(posts, sort){
+  const p=[...posts];
+  if(sort==='newest') p.sort((a,b)=>new Date(b.date)-new Date(a.date));
+  if(sort==='oldest') p.sort((a,b)=>new Date(a.date)-new Date(b.date));
+  if(sort==='az')     p.sort((a,b)=>a.title.localeCompare(b.title));
+  return p;
+}
+
+function getPostsForCat(cat){
+    if(cat==="All Posts")
+        return ALL_POSTS;
+    return ALL_POSTS.filter(post=>post.cat===cat);
+}
+
+function readMoreBtn(p){
+  if(p.link && p.link !== '#'){
+    return `<a href="${p.link}" class="read-btn"><i class="ti ti-arrow-right"></i> Read More</a>`;
+  }
+  return `<span class="coming-soon-btn"><i class="ti ti-clock"></i> Coming Soon</span>`;
+}
+
+function buildFeatured(p){
+  return `<div class="featured-card blog-card">
+    <div class="featured-img">
+      <i class="ti ${p.icon} featured-img-icon"></i>
+      <div class="featured-img-content">
+        <div class="featured-tag">FEATURED</div>
+        <h2>${p.title}</h2>
+        <p>Must-read for Salesforce professionals</p>
+      </div>
+    </div>
+    <div class="featured-body">
+      <div class="featured-category"><i class="ti ti-star" style="font-size:12px;vertical-align:-1px;margin-right:4px"></i>Featured</div>
+      <div class="featured-title">${p.title}</div>
+      <div class="card-footer">
+        <div class="card-author">
+          <div class="author-avatar">${initials(p.author)}</div>
+          <span class="author-name">${p.author} &middot; ${p.dateLabel}</span>
+        </div>
+        ${readMoreBtn(p)}
+      </div>
+    </div>
+  </div>`;
+}
+
+function buildCard(p){
+  const hasArticle = p.link && p.link !== '#';
+  return `<div class="blog-card">
+    <div class="card-img" style="background:${p.bg};">
+      <i class="ti ${p.icon} card-img-icon"></i>
+      <div class="card-img-overlay"></div>
+      <span class="card-category">${p.cat==='All Posts'?'Featured':p.cat}</span>
+      <span class="card-date"><i class="ti ti-calendar" style="font-size:12px"></i>${p.dateLabel}</span>
+    </div>
+    <div class="card-body">
+      ${!hasArticle ? '<span class="draft-badge">✏️ Coming Soon</span>' : ''}
+      <div class="card-title">${p.title}</div>
+      <div class="card-footer">
+        <div class="card-author">
+          <div class="author-avatar">${initials(p.author)}</div>
+          <span class="author-name">${p.author}</span>
+        </div>
+        ${readMoreBtn(p)}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderPosts(){
+  const rg=document.getElementById('realGrid');
+  const pg=document.getElementById('pagination');
+  const ri=document.getElementById('resultsInfo');
+  const rt=document.getElementById('resultsText');
+  const banner=document.getElementById('catBanner');
+  const sorted=sortPosts(filteredPosts,currentSort);
+  const total=sorted.length;
+  const totalPages=Math.ceil(total/POSTS_PER_PAGE);
+  if(currentPage>totalPages) currentPage=1;
+  const start=(currentPage-1)*POSTS_PER_PAGE;
+  const pagePosts=sorted.slice(start,start+POSTS_PER_PAGE);
+
+  banner.classList.remove('show');
+  ri.style.display='flex';
+  rt.innerHTML=`Showing <strong>${start+1}–${Math.min(start+POSTS_PER_PAGE,total)}</strong> of <strong>${total}</strong> articles${currentCat!=='All Posts'?' in <strong>'+currentCat+'</strong>':''}`;
+
+
+  let html='';
+  if(pagePosts.length===0){
+    html='<div class="no-posts"><i class="ti ti-mood-empty" style="font-size:48px;display:block;margin-bottom:12px;color:#cbd5e1"></i>No articles found.</div>';
+  } else {
+    pagePosts.forEach(function(p){
+      html += (p.featured && currentCat==='All Posts') ? buildFeatured(p) : buildCard(p);
+    });
+  }
+  rg.innerHTML=html;
+
+  rg.style.display='grid';
+  rg.querySelectorAll('.blog-card').forEach(function(c,i){
+    setTimeout(function(){ c.classList.add('visible'); }, i*100);
+  });
+
+  renderPagination(totalPages, pg);
+
+  if(!isInitialRender){
+    window.scrollTo({top:200,behavior:'smooth'});
+  }
+  isInitialRender = false;
+}
+
+function renderPagination(totalPages, pg){
+  if(totalPages<=1){ pg.style.display='none'; return; }
+  pg.style.display='flex';
+  let html=`<button class="page-btn${currentPage===1?' disabled':''}" onclick="changePage(${currentPage-1})"><i class="ti ti-chevron-left"></i> Prev</button>`;
+  for(let i=1;i<=totalPages;i++){
+    if(totalPages>7){
+      if(i===1||i===totalPages||Math.abs(i-currentPage)<=1){
+        html+=`<button class="page-btn${i===currentPage?' active':''}" onclick="changePage(${i})">${i}</button>`;
+      } else if(Math.abs(i-currentPage)===2){
+        html+=`<span style="color:#94a3b8;align-self:center">…</span>`;
+      }
+    } else {
+      html+=`<button class="page-btn${i===currentPage?' active':''}" onclick="changePage(${i})">${i}</button>`;
+    }
+  }
+  html+=`<button class="page-btn${currentPage===totalPages?' disabled':''}" onclick="changePage(${currentPage+1})">Next <i class="ti ti-chevron-right"></i></button>`;
+  pg.innerHTML=html;
+}
+
+function changePage(p){ currentPage=p; renderPosts(); }
+
+function showSkeleton(cb){
+  document.getElementById('skeletonGrid').style.display='grid';
+  document.getElementById('realGrid').style.display='none';
+  document.getElementById('pagination').style.display='none';
+  document.getElementById('resultsInfo').style.display='none';
+  document.getElementById('catBanner').classList.remove('show');
+  setTimeout(cb,700);
+}
+
+document.querySelectorAll('.filter-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    currentCat=btn.getAttribute('data-cat');
+    currentPage=1;
+    showSkeleton(function(){
+      document.getElementById('skeletonGrid').style.display='none';
+      filteredPosts=getPostsForCat(currentCat);
+      renderPosts();
+    });
+  });
+});
+
+document.getElementById('sortSelect').addEventListener('change',function(){
+  currentSort=this.value; currentPage=1; renderPosts();
+});
+
+function getHeaderOffset(){
+    const header = document.querySelector(".navbar-area");
+    return (header ? header.offsetHeight : 0) + 24;
+}
+
+// =====================================================
+// FIX ADDITION 2 OF 2: getScrollContainer (from blog-post.html)
+// This was the missing function causing a ReferenceError
+// that crashed the entire sticky IIFE below.
+// =====================================================
+function getScrollContainer(){
+    return window;
+}
+
+(function(){
+    const header = document.querySelector(".navbar-area");
+    const spacer = document.getElementById("bpNavbarSpacer");
+    if (!header) return;
+
+    const STICK_AT = 80;
+    let container = getScrollContainer();
+
+    function getScrollPos(){
+        return container === window ? window.scrollY : container.scrollTop;
+    }
+
+    function onHeaderScroll(){
+        if (getScrollPos() > STICK_AT) {
+            if (!header.classList.contains("is-sticky")) {
+                if (spacer) spacer.style.height = header.offsetHeight + "px";
+                header.classList.add("is-sticky");
+                if (spacer) spacer.classList.add("is-active");
+            }
+        } else {
+            header.classList.remove("is-sticky");
+            if (spacer) spacer.classList.remove("is-active");
+        }
+    }
+
+    function bindHeaderContainer(){
+        const next = getScrollContainer();
+        if (next !== container) {
+            container.removeEventListener("scroll", onHeaderScroll);
+            container = next;
+            container.addEventListener("scroll", onHeaderScroll, { passive: true });
+        }
+        onHeaderScroll();
+    }
+
+    container.addEventListener("scroll", onHeaderScroll, { passive: true });
+    window.addEventListener("resize", bindHeaderContainer, { passive: true });
+    onHeaderScroll();
+})();
+
+</script>
+  <script src="/js/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <!--=== MeanMenu JS ===-->
+  <script src="/js/jquery.meanmenu.min.js"></script>
+</body>
+</html>

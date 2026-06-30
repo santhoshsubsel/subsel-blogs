@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Under Construction">
+
+    <title>Website Under Construction</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <!-- BoxIcons CSS -->
+    <link rel="stylesheet" href="/css/boxicons.min.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+
+    <!-- Owl Theme CSS -->
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/css/magnific-popup.min.css" />
+
+    <!-- Odometer -->
+    <link rel="stylesheet" href="/css/odometer.min.css" />
+
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="/css/nice-select.min.css" />
+
+    <!-- Mean Menu -->
+    <link rel="stylesheet" href="/css/meanmenu.min.css" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Dark Style -->
+    <link rel="stylesheet" href="/css/dark.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            background: rgba(255, 255, 255, .08);
+            border-radius: 50%;
+            top: -140px;
+            left: -120px;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            background: rgba(255, 255, 255, .06);
+            border-radius: 50%;
+            bottom: -120px;
+            right: -100px;
+        }
+
+        .construction-area {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            padding: 40px 15px;
+        }
+
+        .construction-card {
+            background: #fff;
+            border-radius: 25px;
+            max-width: 760px;
+            margin: auto;
+            padding: 60px 45px;
+            text-align: center;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, .18);
+        }
+
+        .construction-icon {
+            width: 120px;
+            height: 120px;
+            background: #eef4ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto auto 30px;
+            font-size: 58px;
+            color: #0d6efd;
+        }
+
+        .construction-card h1 {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        .construction-card p {
+            color: #6b7280;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: auto auto 35px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 40px;
+        }
+
+        .count-box {
+            width: 95px;
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 18px 10px;
+            transition: .3s;
+        }
+
+        .count-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        }
+
+        .count-box h2 {
+            margin: 0;
+            color: #0d6efd;
+            font-size: 34px;
+            font-weight: 700;
+        }
+
+        .count-box span {
+            color: #777;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .social-links {
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            width: 46px;
+            height: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 6px;
+            text-decoration: none;
+            background: #f4f7fb;
+            color: #0d6efd;
+            font-size: 20px;
+            transition: .35s;
+        }
+
+        .social-links a:hover {
+            background: #0d6efd;
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        @media(max-width:768px) {
+
+            .construction-card {
+                padding: 45px 25px;
+            }
+
+            .construction-card h1 {
+                font-size: 34px;
+            }
+
+            .construction-icon {
+                width: 95px;
+                height: 95px;
+                font-size: 48px;
+            }
+
+            .count-box {
+                width: 80px;
+            }
+
+            .count-box h2 {
+                font-size: 28px;
+            }
+
+        }
+
+        @media(max-width:576px) {
+
+            .construction-card h1 {
+                font-size: 28px;
+            }
+
+            .construction-card p {
+                font-size: 15px;
+            }
+
+            .count-box {
+                width: 70px;
+                padding: 14px 5px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="construction-area">
+
+        <div class="construction-card animate__animated animate__fadeInUp">
+
+            <div class="construction-icon animate__animated animate__pulse animate__infinite">
+                <i class='bx bxs-hard-hat'></i>
+            </div>
+
+            <h1>Website Under Construction</h1>
+
+            <p>
+                We are currently working on something amazing.
+                Our website is getting a fresh new look with exciting
+                features and improvements. Stay tuned—we'll be online soon!
+            </p>
+
+            <div class="countdown" id="countdown">
+
+                <div class="count-box">
+                    <h2 id="days">00</h2>
+                    <span>Days</span>
+                </div>
+
+                <div class="count-box">
+                    <h2 id="hours">00</h2>
+                    <span>Hours</span>
+                </div>
+
+                <div class="count-box">
+                    <h2 id="minutes">00</h2>
+                    <span>Minutes</span>
+                </div>
+
+                <div class="count-box">
+                    <h2 id="seconds">00</h2>
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+            <a href="/" class="btn btn-primary btn-home">
+                <i class='bx bx-home'></i>
+                Back to Home
+            </a>
+
+            <div class="social-links">
+
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MeanMenu JS -->
+    <script src="/js/jquery.meanmenu.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="/js/owl.carousel.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Odometer JS -->
+    <script src="/js/odometer.min.js"></script>
+
+    <!-- Appear JS -->
+    <script src="/js/jquery.appear.min.js"></script>
+
+    <!-- Nice Select JS -->
+    <script src="/js/jquery.nice-select.min.js"></script>
+
+    <!-- WOW JS -->
+    <script src="/js/wow.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="/js/main.js"></script>
+
+    <script>
+        // Launch Date (15 Days From Today)
+        const launchDate = new Date();
+        launchDate.setDate(launchDate.getDate() + 15);
+
+        function updateCountdown() {
+
+            const now = new Date().getTime();
+            const distance = launchDate.getTime() - now;
+
+            if (distance <= 0) {
+
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+
+                clearInterval(timer);
+
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+            document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+            document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+            document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+        }
+
+        updateCountdown();
+
+        const timer = setInterval(updateCountdown, 1000);
+
+        // Initialize WOW Animation
+        if (typeof WOW !== "undefined") {
+            new WOW().init();
+        }
+
+        // Initialize MeanMenu if available
+        if ($.fn.meanmenu) {
+            $('.mean-menu').meanmenu({
+                meanScreenWidth: "991"
+            });
+        }
+
+        // Initialize Nice Select if available
+        if ($.fn.niceSelect) {
+            $('select').niceSelect();
+        }
+
+        // Initialize Owl Carousel if available
+        if ($.fn.owlCarousel) {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 4000
+            });
+        }
+    </script>
+
+</body>
+</html>
+
