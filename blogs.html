@@ -204,13 +204,62 @@ body{font-family:'Poppins',sans-serif;background:var(--light);color:#1e293b;}
 .bp-navbar-spacer.is-active{
   display:block;
 }
+.preloader {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  background: #f7f6f3 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.preloader.preloader-deactivate {
+  display: none !important;
+}
+.preloader-ring-wrap {
+  position: relative !important;
+  width: 110px !important;
+  height: 110px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.preloader-ring {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 110px !important;
+  height: 110px !important;
+  animation: preloader-spin 1.4s linear infinite !important;
+}
+.preloader-logo {
+  width: 56px !important;
+  height: 56px !important;
+  animation: preloader-pulse 1.4s ease-in-out infinite !important;
+}
+@keyframes preloader-spin { to { transform: rotate(360deg); } }
+@keyframes preloader-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(.86); opacity: .75; }
+}
 </style>
 </head>
 <body>
   <!-- Start Preloader Area -->
-  <div class="preloader">
-    <div class="spinner"></div>
+  <div class="preloader preloader-deactivate" id="rmPreloader">
+  <div class="preloader-ring-wrap">
+    <svg class="preloader-ring" viewBox="0 0 110 110">
+      <circle cx="55" cy="55" r="48" fill="none" stroke="#e8e4da" stroke-width="4"/>
+      <circle cx="55" cy="55" r="48" fill="none" stroke="url(#pg)" stroke-width="4" stroke-linecap="round" stroke-dasharray="80 280"/>
+      <defs>
+        <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0865f8"/>
+          <stop offset="100%" stop-color="#4BACC6"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <img src="/img/subselLogo.png" class="preloader-logo" alt="Subsel Tech Solutions" />
   </div>
+</div>
   <!-- End Preloader Area -->
 
   <!-- Start Top Header Area -->
@@ -446,7 +495,7 @@ body{font-family:'Poppins',sans-serif;background:var(--light);color:#1e293b;}
       </div>
     </div>
     <div class="main-navbar">
-      <div class="container-fluid p-0 bp-nav-container">
+      <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-md navbar-light">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="/img/subselPNGLogo.png" class="black-logo" alt="logo" />
@@ -688,6 +737,11 @@ fetch("blog-posts.json")
     createCategoryButtons();
     initFilterToggle();
     filteredPosts = ALL_POSTS;
+    const savedPage = Number(sessionStorage.getItem("blogCurrentPage"));
+
+if(savedPage){
+    currentPage = savedPage;
+}
     document.getElementById("skeletonGrid").style.display = "none";
     console.log(data);
     renderPosts();
@@ -757,11 +811,45 @@ function getPostsForCat(cat){
 }
 
 function readMoreBtn(p){
-  if(p.link && p.link !== '#'){
-    return `<a href="${p.link}" class="read-btn"><i class="ti ti-arrow-right"></i> Read More</a>`;
-  }
-  return `<span class="coming-soon-btn"><i class="ti ti-clock"></i> Coming Soon</span>`;
+    if(p.link && p.link !== '#'){
+        return `
+        <a href="${p.link}"
+           class="read-btn"
+           data-link="${p.link}"
+           onclick="return handleReadMore(event, this);">
+            <i class="ti ti-arrow-right"></i>
+            Read More
+        </a>`;
+    }
+    return `<span class="coming-soon-btn">Coming Soon</span>`;
 }
+function handleReadMore(e, el){
+    e.preventDefault();
+
+    sessionStorage.setItem('blogCurrentPage', currentPage);
+    sessionStorage.setItem('blogScroll', window.scrollY);
+
+    const link = el.getAttribute('data-link');
+    const preloader = document.getElementById('rmPreloader');
+    preloader.classList.remove('preloader-deactivate');
+    preloader.style.display = 'flex';
+
+    setTimeout(function(){
+        window.location.href = link;
+    }, 2000);
+
+    return false;
+}
+// Fix: reset stuck preloader when page is restored from bfcache (Back button)
+window.addEventListener('pageshow', function(event){
+    if (event.persisted) {
+        const preloader = document.getElementById('rmPreloader');
+        if (preloader) {
+            preloader.classList.add('preloader-deactivate');
+            preloader.style.display = 'none';
+        }
+    }
+});
 
 function buildFeatured(p){
   return `<div class="featured-card blog-card">
@@ -846,7 +934,7 @@ function renderPosts(){
   renderPagination(totalPages, pg);
 
   if(!isInitialRender){
-    window.scrollTo({top:200,behavior:'smooth'});
+    window.scrollTo({top:644,behavior:'smooth'});
   }
   isInitialRender = false;
 }
@@ -870,7 +958,14 @@ function renderPagination(totalPages, pg){
   pg.innerHTML=html;
 }
 
-function changePage(p){ currentPage=p; renderPosts(); }
+function changePage(p){
+    currentPage = p;
+
+    sessionStorage.setItem("blogCurrentPage", p);
+    sessionStorage.setItem("blogScroll", window.scrollY);
+
+    renderPosts();
+}
 
 function showSkeleton(cb){
   document.getElementById('skeletonGrid').style.display='grid';

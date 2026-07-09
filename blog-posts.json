@@ -808,5 +808,35 @@
         "date": "2026-06-17",
         "dateLabel": "June 17, 2026",
         "link": "blog-post.html?title=product-image-public-url-generator-using-apex-and-lightning-web-components"
+    },
+    {
+        "order": 56,
+        "id": 56,
+        "featured": false,
+        "cat": "Salesforce Integration",
+        "icon": "ti-calendar",
+        "bg": "linear-gradient(135deg,#4CAF50,#81C784)",
+        "title": "How to Integrate Google Calendar with Salesforce",
+        "slug": "how-to-integrate-google-calendar-with-salesforce",
+        "text": "Learn how to integrate Google Calendar with Salesforce for seamless synchronization of events and activities.",
+        "author": "AVINASH.S",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?title=how-to-integrate-google-calendar-with-salesforce"
+    },
+    {
+        "order": 57,
+        "id": 57,
+        "featured": false,
+        "cat": "CRM",
+        "icon": "ti-check",
+        "bg": "linear-gradient(135deg,#2196F3,#64B5F6)",
+        "title": "CRM Testing Best Practices: Ensuring a Reliable Customer Relationship Management System",
+        "slug": "crm-testing-best-practices-ensuring-a-reliable-customer-relationship-management-system",
+        "text": "Discover the best practices for CRM testing to ensure your customer relationship management system remains reliable, secure, and high-performing.",
+        "author": "KANIMOZHI KALIAPERUMAL",
+        "date": "2026-07-09",
+        "dateLabel": "July 9, 2026",
+        "link": "blog-post.html?title=crm-testing-best-practices-ensuring-a-reliable-customer-relationship-management-system"
     }
 ]

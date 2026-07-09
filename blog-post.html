@@ -3,7 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog Post | Subsel Tech Solutions</title>
+<title>Subsel Tech Solutions</title>
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<link rel="canonical" href="">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <!-- Animate CSS -->
@@ -39,11 +55,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* Hide only the preloader */
-.preloader { display:none!important; }
-.preloader::before { display:none!important; }
-.preloader::after { display:none!important; }
-.preloader .spinner { display:none!important; }
 
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
@@ -601,19 +612,33 @@ h1,h2,h3{font-family:'Inter',sans-serif;letter-spacing:-0.01em;}
 }
 
 .bp-toc-card.is-open .bp-toc-body{
-  max-height:2000px;
+  max-height:400px;
 }
 
 .bp-toc-list{
   list-style:none;
-  padding-left:0;
+  padding:0 4px 4px 0;
   margin:0;
-  position: relative;
+  position:relative;
   display:flex;
   flex-direction:column;
   gap:8px;
+  max-height:340px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(8,101,248,.25) transparent;
 }
 
+.bp-toc-list::-webkit-scrollbar{ width:4px; }
+.bp-toc-list::-webkit-scrollbar-track{ background:transparent; }
+.bp-toc-list::-webkit-scrollbar-thumb{
+  background:rgba(8,101,248,.25);
+  border-radius:4px;
+}
+.bp-toc-list::-webkit-scrollbar-thumb:hover{
+  background:rgba(8,101,248,.45);
+}
 .bp-toc-item{
   position: relative;
   margin-bottom:0;
@@ -1088,8 +1113,22 @@ h1,h2,h3{font-family:'Inter',sans-serif;letter-spacing:-0.01em;}
 </head>
 <body>
 
-<div class="preloader"><div class="spinner"></div></div>
-  <!-- End Preloader Area -->
+<!-- <div class="preloader">
+  <div class="preloader-ring-wrap">
+    <svg class="preloader-ring" viewBox="0 0 110 110">
+      <circle cx="55" cy="55" r="48" fill="none" stroke="#e8e4da" stroke-width="4"/>
+      <circle cx="55" cy="55" r="48" fill="none" stroke="url(#pg)" stroke-width="4" stroke-linecap="round" stroke-dasharray="80 280"/>
+      <defs>
+        <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0865f8"/>
+          <stop offset="100%" stop-color="#4BACC6"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <img src="/img/subselLogo.png" class="preloader-logo" alt="Subsel Tech Solutions" />
+  </div>
+</div>
+  End Preloader Area -->
 
   <!-- Start Top Header Area -->
   <div class="top-header-area">
@@ -1433,7 +1472,7 @@ h1,h2,h3{font-family:'Inter',sans-serif;letter-spacing:-0.01em;}
           <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="/index.html" class="nav-link active"> HOME </a>
+                <a href="/index.html" class="nav-link "> HOME </a>
               </li>
               <li class="nav-item">
                 <a href="aboutus.html" class="nav-link"> ABOUT US </a>
@@ -1689,7 +1728,7 @@ h1,h2,h3{font-family:'Inter',sans-serif;letter-spacing:-0.01em;}
                 <a href="/contact_us.html" class="nav-link"> CONTACT US </a>
               </li>
               <li class="nav-item">
-                <a href="/blog.html" class="nav-link"> BLOGS </a>
+                <a href="/blog.html" class="nav-link active"> BLOGS </a>
               </li>
                 <!-- <li class="nav-item">
                 <a href="/contact_us.html" class="nav-link"> CAREER </a>
@@ -1770,7 +1809,6 @@ h1,h2,h3{font-family:'Inter',sans-serif;letter-spacing:-0.01em;}
   </aside>
 
 </div>
-
 <script>
 
 function initials(n){ return n.split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase(); }
@@ -1784,7 +1822,10 @@ function slugify(text) {
         .replace(/\s+/g, "-");
 }
 
-const slug = new URLSearchParams(window.location.search).get("title");
+const params = new URLSearchParams(window.location.search);
+
+const slug = params.get("title");
+const page = params.get("page") || 1;
 
 async function loadBlog() {
 
@@ -1825,7 +1866,61 @@ async function loadBlog() {
         document.getElementById("bpHero").style.display = "block";
         document.getElementById("bpLayout").style.display = "grid";
 
-        document.title = post.title + " | Subsel Tech Solutions";
+        if (post.seo) {
+
+    document.title = post.seo.metaTitle;
+
+    document.querySelector('meta[name="description"]').setAttribute(
+        "content",
+        post.seo.metaDescription
+    );
+
+    document.querySelector('meta[name="keywords"]').setAttribute(
+        "content",
+        post.seo.keywords.join(", ")
+    );
+
+    document.querySelector('link[rel="canonical"]').setAttribute(
+        "href",
+        post.seo.canonical
+    );
+
+    document.querySelector('meta[property="og:title"]').setAttribute(
+        "content",
+        post.seo.metaTitle
+    );
+
+    document.querySelector('meta[property="og:description"]').setAttribute(
+        "content",
+        post.seo.metaDescription
+    );
+
+    document.querySelector('meta[property="og:image"]').setAttribute(
+        "content",
+        post.seo.image
+    );
+
+    document.querySelector('meta[property="og:url"]').setAttribute(
+        "content",
+        post.seo.canonical
+    );
+
+    document.querySelector('meta[name="twitter:title"]').setAttribute(
+        "content",
+        post.seo.metaTitle
+    );
+
+    document.querySelector('meta[name="twitter:description"]').setAttribute(
+        "content",
+        post.seo.metaDescription
+    );
+
+    document.querySelector('meta[name="twitter:image"]').setAttribute(
+        "content",
+        post.seo.image
+    );
+
+}
 
         document.getElementById("bpCat").textContent = post.category;
         document.getElementById("bpTitle").textContent = post.title;
@@ -2090,7 +2185,12 @@ function setupTocScrollSpy(headings){
     window.addEventListener("resize", bindHeaderContainer, { passive: true });
     onHeaderScroll();
 })();
-
+window.addEventListener('pagehide', function(event){
+    if (event.persisted) {
+        const preloader = document.getElementById('rmPreloader');
+        if (preloader) preloader.classList.add('preloader-deactivate');
+    }
+});
 var jq = document.createElement('script');
 jq.src = '/js/jquery.min.js';
 jq.onload = function(){
@@ -2099,7 +2199,6 @@ jq.onload = function(){
   });
 };
 document.body.appendChild(jq);
-
 </script>
   <script src="/js/jquery.min.js"></script>
   <!-- Bootstrap JS -->

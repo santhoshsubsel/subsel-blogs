@@ -585,7 +585,7 @@
         "role": "Salesforce Developer",
         "date": "June 17, 2026",
         "readTime": "12 min read",
-        "icon": "ti-store",
+        "icon": "ti-shopping-cart",
         "background": "linear-gradient(135deg,#0D47A1,#1976D2)",
         "tags": [
             "B2B Commerce",
@@ -1031,5 +1031,40 @@
             "Content Distribution"
         ],
         "contentFile": "content/55.html"
+    },
+    {
+        "id": 56,
+        "category": "Salesforce Integration",
+        "title": "How to Integrate Google Calendar with Salesforce",
+        "author": "AVINASH.S",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-calendar",
+        "background": "linear-gradient(135deg,#4CAF50,#81C784)",
+        "tags": [
+            "Google Calendar",
+            "Salesforce",
+            "Integration"
+        ],
+        "contentFile": "content/56.html"
+    },
+    {
+        "id":57,
+        "order": 57,
+        "category": "Salesforce Testing",
+        "title": "CRM Testing Best Practices: Ensuring a Reliable Customer Relationship Management System",
+        "author": "Kanimozhi Kaliaperumal",
+        "role": "Salesforce Developer",
+        "date": "June 17, 2026",
+        "readTime": "12 min read",
+        "icon": "ti-check",
+        "background": "linear-gradient(135deg,#FF9800,#FFB74D)",
+        "tags": [
+            "Salesforce Testing",
+            "CRM",
+            "Best Practices"
+        ],
+        "contentFile": "content/57.html"
     }
 ]
