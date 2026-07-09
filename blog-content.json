@@ -1066,5 +1066,21 @@
             "Best Practices"
         ],
         "contentFile": "content/57.html"
+    },
+    {
+        "id": 58,
+        "category": "Salesforce Administration",
+        "title": "Access Professional Management",
+        "author": "Karankishore V and Gopinath Baskaran",
+        "role": "Salesforce Administrator",
+        "date": "June 17, 2026",
+        "readTime": "10 min read",
+        "icon": "ti-user",
+        "background": "linear-gradient(135deg,#9E9E9E,#BDBDBD)",
+        "tags": [
+            "Salesforce Administration",
+            "Access Management"
+        ],
+        "contentFile": "content/58.html"
     }
 ]

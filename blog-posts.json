@@ -838,5 +838,20 @@
         "date": "2026-07-09",
         "dateLabel": "July 9, 2026",
         "link": "blog-post.html?title=crm-testing-best-practices-ensuring-a-reliable-customer-relationship-management-system"
+    },
+    {
+        "order": 58,
+        "id": 58,
+        "featured": false,
+        "cat": "Salesforce Administration",
+        "icon": "ti-user",
+        "bg": "linear-gradient(135deg,#9E9E9E,#BDBDBD)",
+        "title": "Access Professional Management",
+        "slug": "access-professional-management",
+        "text": "Learn how to effectively manage access permissions for Salesforce users and profiles.",
+        "author": "Karankishore V and Gopinath Baskaran",
+        "date": "2026-06-17",
+        "dateLabel": "June 17, 2026",
+        "link": "blog-post.html?title=access-professional-management"
     }
 ]
